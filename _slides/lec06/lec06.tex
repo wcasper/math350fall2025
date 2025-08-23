@@ -1,0 +1,353 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This file is a template using the "beamer" package to create slides for a talk or presentation
+% - Giving a talk on some subject.
+% - The talk is between 15min and 45min long.
+% - Style is ornate.
+
+% MODIFIED by Jonathan Kew, 2008-07-06
+% The header comments and encoding in this file were modified for inclusion with TeXworks.
+% The content is otherwise unchanged from the original distributed with the beamer package.
+
+\documentclass{beamer}
+\setbeamercovered{invisible}
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[utf8]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%%% MATH RELATED
+
+\input{macros.tex}
+
+\title{MATH 350-2 Advanced Calculus} 
+\subtitle
+{} % (optional)
+
+\author[W.R. Casper] % (optional, use only with lots of authors)
+{W.R. Casper}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[California State University Fullerton] % (optional, but mostly needed)
+{
+  Department of Mathematics\\
+  California State University Fullerton}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:  
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+\section{Real Analysis Lecture 6}
+
+\subsection{Functions}
+
+\begin{frame}{Functions}
+A \textbf{function} from $A$ to $B$ is a relation $\mathcal R$ from $A$ to $B$ with the property
+\pause
+$$a\mathcal Rb\ \text{and}\ a\mathcal Rc\quad\text{implies}\quad b=c.$$
+\pause
+If a relation $\mathcal R$ is a function, we usually use a symbol like $f$.\\
+\pause
+\begin{align*}
+\text{\color{red}NOTATION:}&\quad f: A\rightarrow B\quad\text{means $f$ is a function from $A$ to $B$}\\
+\text{\color{red}NOTATION:}&\quad f(a) = b\quad\text{means}\quad (a,b)\in f.
+\end{align*}
+\pause
+The set $$\img(f) = \{f(a): a\in A\}$$ is called the \textbf{range} or \textbf{image} of $f$
+\end{frame}
+
+\begin{frame}{Challenge!}
+\begin{prob}
+Determine all the equivalence relations on $\mathbb{R}$ which are also functions.
+\end{prob}
+\pause
+\begin{soln}
+$f=\mathcal R$ must be reflexive, so $x\mathcal Rx$ for all $x$\\
+\pause
+This means $f(x) = x$ for all $x$.\\
+\pause
+Thus the only function which is an equivalence relation is the identity function
+$$f(x) = x.$$
+\end{soln}
+\end{frame}
+
+\begin{frame}{Properties of functions}
+A function $f$ from $A$ to $B$ is called \textbf{one-to-one} or \textbf{injective} if 
+\pause
+$$f(x) = f(y) \quad\text{implies}\quad x=y\ \ \text{for all $x,y\in A$}.$$
+\pause
+It is called \textbf{onto} or \textbf{surjective} if $\img(f) = B$, or equivalently
+$$\text{for all $b\in B$ there exists $a\in A$ with $f(a) =b$}.$$
+\pause
+If it satisfies both properties, it is called \textbf{bijective}.
+\end{frame}
+
+\begin{frame}{Inverses}
+The \textbf{converse} of a relation $\mathcal R$ from $A$ to $B$ is the relation
+\pause
+$$\check{\mathcal R} = \{(b,a)\in B\times A: a\mathcal R b\}.$$
+\pause
+If $f$ is  function, then $\check f$ may or not be a function.\\
+\pause
+If it is, we call it the \vocab{inverse} of $f$.
+\end{frame}
+
+\begin{frame}{Compositions}
+The composition of $f: A\rightarrow B$ and $g: B\rightarrow C$ is the function
+\pause
+$$g\circ f: A\rightarrow C$$
+\pause
+with domain $A$ and codomain $C$ defined by
+\pause
+$$(g\circ f)(x)  = g(f(x)).$$
+\end{frame}
+
+\begin{frame}{Sequences}
+A \textbf{finite sequence} is a function $f: \{1,2,\dots,n\}\rightarrow \mathbb{R}$.\\
+\pause
+An \textbf{infinite sequence} is a function $f: \mathbb{Z}_+\rightarrow \mathbb{R}$.\\
+\pause
+$$\text{\color{red}NOTATION:}\quad f_n\quad\text{indicates the value}\ f(n)$$
+\pause
+$$\text{\color{red}NOTATION:}\quad \{f_n\}\quad\text{is another way of writing the function}\ f$$
+\pause
+If $k:\mathbb{Z}_+\rightarrow\mathbb{Z}_+$ is a function which is \vocab{strictly increasing}, meaning
+$$m < n\quad\Rightarrow\quad k(m) < k(n),$$
+\pause
+then the composition $f\circ k: \mathbb{Z}_+\rightarrow \mathbb{R}$ forms a sequence called a \vocab{subsequence} of $f$.
+\pause
+$$\text{\color{red}NOTATION:}\quad \{f_{k(n)}\}\ \text{or}\ \{f_{k_n}\}\quad\text{both really mean}\ f\circ k$$
+\end{frame}
+
+\subsection{Cardinality}
+
+\begin{frame}{Cantor's Paradise}
+Philosophy: sets are the same size, or \textbf{cardinality}, if there is a bijection between them.
+\begin{itemize}
+\pause 
+\item $|A|$ denotes the cardinality of $A$
+\pause 
+\item $|A| \leq |B|$ means there is an injection $f: A\rightarrow B$
+\pause 
+\item $|A| \geq |B|$ means there is a surjection $f: A\rightarrow B$
+\pause 
+\item $|A| = |B|$ means there is a bijection $f: A\rightarrow B$
+\end{itemize}
+\pause
+\end{frame}
+
+\begin{frame}{Cantor's Paradise}
+\begin{thm}[Cantor-Schroeder-Bernstein Theorem]
+The following are equivalent
+\begin{enumerate}[(i)]
+\item $|A|\leq |B|$  and $|B|\leq |A|$
+\item $|A|\geq |B|$  and $|B|\geq |A|$
+\item $|A|\leq |B|$  and $|A|\geq |B|$
+\item $|A|= |B|$
+\end{enumerate}
+\end{thm}
+\end{frame}
+
+\begin{frame}{Challenge}
+\begin{prob}
+Show that $\mathbb{Z}_+$ and $\mathbb{Z}_+\times\mathbb{Z}_+$ have the same cardinality.
+\end{prob}
+\pause
+Hint: consider $f: \mathbb{Z}_+\times\mathbb{Z}_+\rightarrow\mathbb{Z}_+$, $f(m,n) = 2^m3^n$
+\begin{soln}
+\pause
+$2^a3^b = 2^c3^d$ if and only if $a=c$ and $b=d$ (Fund. Thm. Arith.)\\
+\pause
+$f(m,n) = 2^m3^n$ is injective\\
+\pause
+$|\mathbb{Z}_+\times\mathbb{Z}_+|\leq |\mathbb{Z}_+|$\\
+\pause
+$g: \mathbb{Z}_+\times\mathbb{Z}_+\rightarrow\mathbb{Z}_+$, $g(m,n) = m$ is surjective\\
+\pause
+$|\mathbb{Z}_+\times\mathbb{Z}_+|\geq |\mathbb{Z}_+|$
+\end{soln}
+\end{frame}
+
+\begin{frame}{Challenge}
+\begin{prob}
+Show that $\mathbb{Z}_+$ and $\mathbb{Z}$ have the same cardinality.
+\end{prob}
+\pause
+Hint: consider $f: \mathbb{Z}_+\rightarrow\mathbb{Z}$
+$$f(n) = \left\lbrace\begin{array}{cc}
+n/2 & \text{$n$ is even}\\
+-(n-1)/2 & \text{$n$ is odd}\\
+\end{array}\right.$$
+\end{frame}
+
+\begin{frame}{Finite and infinite}
+\pause
+Sets with finite cardinality:
+$$\{1,2,3\},\ \ \ \{\mathbb{Z},\mathbb{R}\},\ \ \ \{x:\ \text{$x$ is a student at CSUF}\}$$
+\pause
+Sets with infinite cardinality:
+$$\mathbb{Z}_+,\ \ \ \mathbb{Q},\ \ \ \mathbb{R},\ \ \ \mathbb{C}.$$
+\pause
+Cantor's discovery: there are multiple sizes of infinity!
+$$\mathbb{Z}_+,\ \mathbb{Z},\ \mathbb{Z}\times\mathbb{Z},\ \mathbb{Q},\ \text{are all the same cardinality}$$
+\pause
+$$\mathbb{R}\  \text{has larger cardinality than}\ \mathbb{Z}_+.$$
+\end{frame}
+
+
+\begin{frame}{Cantor diagonalization}
+Suppose there were a bijection
+$$f: \mathbb{Z}_+\rightarrow (0,1)$$
+\pause
+\begin{align*}
+f(1) &= 0.a_{11}a_{12}a_{13}a_{14}a_{15}\dots\\
+f(2) &= 0.a_{21}a_{22}a_{23}a_{24}a_{25}\dots\\
+f(3) &= 0.a_{31}a_{32}a_{33}a_{34}a_{35}\dots\\
+f(4) &= 0.a_{41}a_{42}a_{43}a_{44}a_{45}\dots\\
+f(5) &= 0.a_{51}a_{52}a_{53}a_{54}a_{55}\dots\\
+\vdots 
+\end{align*}
+\end{frame}
+
+\begin{frame}{Cantor diagonalization}
+Suppose there were a surjection
+$$f: \mathbb{Z}_+\rightarrow (0,1)$$
+\pause
+\begin{align*}
+f(1) &= 0.{\color{red} a_{11}}a_{12}a_{13}a_{14}a_{15}\dots\\
+f(2) &= 0.a_{21}{\color{red} a_{22}}a_{23}a_{24}a_{25}\dots\\
+f(3) &= 0.a_{31}a_{32}{\color{red} a_{33}}a_{34}a_{35}\dots\\
+f(4) &= 0.a_{41}a_{42}a_{43}{\color{red} a_{44}}a_{45}\dots\\
+f(5) &= 0.a_{51}a_{52}a_{53}a_{54}{\color{red} a_{55}}\dots\\
+\vdots 
+\end{align*}
+\end{frame}
+
+\begin{frame}{Cantor diagonalization}
+Now define $b_1,b_2,b_3\dots\in \{0,9\}$ by
+$$b_j = \left\lbrace
+\begin{array}{cc}
+1, & a_{jj} = 0\\
+0, & a_{jj} \neq 0
+\end{array}\right.$$
+\pause
+$$b = 0.{\color{blue}{b_1b_2b_3b_4b_5\dots}}$$
+\end{frame}
+
+\begin{frame}{Cantor diagonalization}
+\begin{itemize}
+\item $b\in (0,1)$
+\pause
+\item $f$ is surjective
+\pause
+\item there exists $n\in\mathbb{Z}_+$ with $f(n) = b$
+\pause
+$$0.b_1b_2b_3b_4b_5\dots = 0.a_{n1}a_{n2}a_{n3}a_{n4}a_{n5}\dots$$
+\pause
+\item $b_n = a_{nn}$ \pause CONTRADICTION!
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Countable and uncountable}
+A set is
+\begin{itemize}
+\pause
+\item \textbf{countably infinite} if it has the same cardinality as $\mathbb{Z}_+$
+\pause
+\item \textbf{countable} if it is finite or countably infinite
+\pause
+\item \textbf{uncountable} otherwise
+\end{itemize}
+\pause
+\begin{thm}[Cantor's Theorem]
+$\mathbb{R}$ is uncountable
+\end{thm}
+\end{frame}
+
+
+\end{document}
+
+

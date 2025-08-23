@@ -1,0 +1,283 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This file is a template using the "beamer" package to create slides for a talk or presentation
+% - Giving a talk on some subject.
+% - The talk is between 15min and 45min long.
+% - Style is ornate.
+
+% MODIFIED by Jonathan Kew, 2008-07-06
+% The header comments and encoding in this file were modified for inclusion with TeXworks.
+% The content is otherwise unchanged from the original distributed with the beamer package.
+
+\documentclass{beamer}
+\setbeamercovered{invisible}
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[utf8]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%%% MATH RELATED
+
+\input{macros.tex}
+
+\title{MATH 350-2 Advanced Calculus} 
+\subtitle
+{} % (optional)
+
+\author[W.R. Casper] % (optional, use only with lots of authors)
+{W.R. Casper}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[California State University Fullerton] % (optional, but mostly needed)
+{
+  Department of Mathematics\\
+  California State University Fullerton}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:  
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+\section{Real Analysis Lecture 22}
+
+\subsection{Riemann-Stieltjes integrals}
+
+\begin{frame}{Stieltjes sums}
+Let $f$ and $\alpha$ be real-valued functions on $[a,b]$, and let $P=\{x_0,x_1,\dots,x_n\}$ be a partition of $[a,b]$ and define\\
+{\small
+$$m_k(f) = \inf\{f(x): x_{k-1}\leq x\leq x_k\},\ \ M_k(f) = \sup\{f(x): x_{k-1}\leq x\leq x_k\}.$$
+}
+\pause
+The \textbf{upper Stieltjes sum} of $f$ with respect to $\alpha$ on $[a,b]$ is:
+$$\overline{S}(P,f,\alpha) = \sum_{k=1}^n M_k(f)\Delta\alpha_k(P),$$
+\pause
+and the \textbf{lower Stieltjes sum} of $f$ with respect to $\alpha$ on $[a,b]$ is:
+$$\underline{S}(P,f,\alpha) = \sum_{k=1}^n m_k(f)\Delta\alpha_k(P)$$
+\end{frame}
+
+\begin{frame}{Stieltjes sums}
+These sums refine predictably!
+\begin{lem}
+Let $f$ and $\alpha$ be real-valued functions on $[a,b]$, with $\alpha$ monotone increasing.
+\pause
+If $P$ is a partition of $[a,b]$ and $P'$ is a refinement of $P$, then
+$$
+\underline{S}(P,f,\alpha) \leq
+\underline{S}(P',f,\alpha) \leq
+\overline{S}(P',f,\alpha) \leq
+\overline{S}(P,f,\alpha)
+$$
+\end{lem}
+\end{frame}
+
+\begin{frame}{Stieltjes sums}
+\begin{proof}
+The inequality $\underline{S}(P',f,\alpha) \leq \overline{S}(P',f,\alpha)$ is clear.\\
+\pause
+We will prove $\underline{S}(P,f,\alpha) \leq \underline{S}(P',f,\alpha)$.\\
+\pause
+Let $P=\{x_0,\dots, x_n\}$ and $P'=\{x_0',\dots, x_N'\}$.\\
+\pause
+For each $k$, let $\iota(k)$ with $x_{\iota(k)-1} \leq x_k'\leq x_{\iota(k)}$.\\
+\pause
+{
+\tiny
+$$m_{\iota(k)}(f)=\inf\{f(x): x_{\iota(k)-1}\leq x\leq x_{\iota(k)}\}\leq \inf\{f(x): x_{k-1}'\leq x\leq x_k'\}=m_k'(f)$$
+}
+\pause
+Therefore 
+{\tiny
+\begin{align*}
+\underline{S}(P',f,\alpha)
+ &=    \sum_{k=1}^N m_k'(f)\Delta\alpha_k(P')\\
+ &\geq \sum_{k=1}^N m_{\iota(k)}(f)\Delta\alpha_k(P')\\
+ & = \sum_{k=1}^n m_{k}(f)\Delta\alpha_k(P) = \underline{S}(P,f,\alpha)
+\end{align*}
+}
+\end{proof}
+\end{frame}
+
+\begin{frame}{Stieltjes integrals}
+Let $f$ and $\alpha$ be real-valued functions on $[a,b]$, with $\alpha$ monotone increasing.
+\pause
+The \textbf{upper Stieltjes integral} of $f$ with respect to $\alpha$ on $[a,b]$ is:
+$$\overline{\int} fd\alpha = \inf\{\overline{S}(P,f,\alpha): P\ \text{partition of}\ [a,b]\}$$
+\pause
+The \textbf{lower Stieltjes integral} of $f$ with respect to $\alpha$ on $[a,b]$ is:
+$$\underline{\int} fd\alpha = \sup\{\underline{S}(P,f,\alpha): P\ \text{partition of}\ [a,b]\}$$
+\end{frame}
+
+\begin{frame}{Riemann's criterion}
+\begin{defn}
+Let $f$ and $\alpha$ be real-valued functions on $[a,b]$.\\
+Then $f$ \textbf{satisfies Riemann's criterion} with respect to $\alpha$ on $[a,b]$ if for all $\epsilon > 0$ there exists a partition $P_\epsilon$ such that for all refinements $P$ of $P_\epsilon$
+$$0\leq \overline S(P,f,\alpha)-\underline S(P,f,\alpha) < \epsilon.$$
+\end{defn}
+\pause
+\begin{thm}
+Let $f$ and $\alpha$ be real-valued functions on $[a,b]$, with $\alpha$ monotone increasing.  Then the following are equivalent:\\
+\pause
+(a) $f$ is Riemann integrable with respect to $\alpha$ on $[a,b]$\\
+\pause
+(b) $f$ satisfies Riemann's criterion with respect to $\alpha$ on $[a,b]$\\
+\pause
+(c) $\underline \int f d\alpha = \overline \int f d\alpha$
+\end{thm}
+\end{frame}
+
+\begin{frame}{Challenge!}
+Suppose that $f(x) = x$, $\alpha(x) = x$, and $[a,b] = [0,1]$.\\
+\begin{prob}
+Calculate the value of
+$$\overline S(P,f,\alpha)\ \ \text{for}\ \ P = \{0/n,1/n,\dots,n/n\}.$$
+\end{prob}
+\end{frame}
+
+\begin{frame}{Challenge!}
+Suppose that $f(x) = x$, $\alpha(x) = x$, and $[a,b] = [0,1]$.\\
+\begin{prob}
+Calculate the value of
+$$\underline S(P,f,\alpha)\ \ \text{for}\ \ P = \{0/n,1/n,\dots,n/n\}.$$
+\end{prob}
+\end{frame}
+
+\begin{frame}{Challenge!}
+Suppose that $f(x) = x$, $\alpha(x) = x$, and $[a,b] = [0,1]$.\\
+\begin{prob}
+Prove that $\int_0^1 f d\alpha = 1/2$.
+\end{prob}
+\end{frame}
+
+\begin{frame}{Challenge!}
+Suppose that $f(x) = x^2$, $\alpha(x) = x$, and $[a,b] = [0,1]$.\\
+\begin{prob}
+Prove that $\int_0^1 f d\alpha = 1/3$.
+Hint:
+$$1^2 + 2^2 + 3^2 + \dots + n^2 = \frac{n(n+1)(2n+1)}{6}$$
+\end{prob}
+\end{frame}
+
+\begin{frame}{Continuous implies integrable}
+\begin{thm}
+Suppose that $f$ is a continuous real-valued function on $[a,b]$.\\
+Then $f$ is Riemann integrable on $[a,b]$.
+\end{thm}
+\end{frame}
+
+\begin{frame}{Mean-Value Theorem for Integrals}
+\begin{thm}
+Suppose that $f$ is integrable with respect to $\alpha$ on $[a,b]$.\\
+Let
+$$m = \inf\{f(x): x\in [a,b]\},\quad\text{and}\quad M = \sup\{f(x): x\in [a,b]\}.$$
+Then there exists $m\leq c\leq M$ with
+$$\int_a^b f d\alpha = c(\alpha(b)-\alpha(a)).$$
+In the special case $f$ is continuous, then $c = f(x_0)$ for some $x_0\in [a,b]$.
+\end{thm}
+\end{frame}
+
+\begin{frame}{Fundamental Theorem of Calculus I}
+Assume that $f$ is integrable with respect to $\alpha$ on $[a,b]$ and set\\
+\pause
+$$F(x) = \int_a^x fd\alpha,\quad x\in [a,b].$$
+\begin{thm}[FTC I]
+Suppose that $\alpha$ is monotone increasing on $[a,b]$.\\
+Then for any $x\in (a,b)$ where $f$ is continuous and $\alpha$ is differentiable
+$$F'(x) = f(x)\alpha'(x).$$
+\end{thm}
+\end{frame}
+
+\begin{frame}{Fundamental Theorem of Calculus II}
+\begin{thm}[FTC II]
+Suppose that $f$ is Riemann integrable on $[a,b]$.\\
+Also suppose $g$ is continuous on $[a,b]$ with $g'(x) = f(x)$ for all $x\in (a,b)$.\\
+Then
+$$\int_a^b f(x)dx = g(b)-g(a).$$
+\end{thm}
+\end{frame}
+
+
+\end{document}
+
+

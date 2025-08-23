@@ -1,0 +1,5 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Real Analysis Lecture 2}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Types of real numbers}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Integers}{13}{0}{1}
+\beamer@subsectionintoc {1}{3}{Upper Bound and Supremum}{58}{0}{1}
