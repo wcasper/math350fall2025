@@ -16,7 +16,7 @@ Apostol pp. 1-6
 
 ### Slides
 
-* [Link to slides](http://wcasper.github.io/math350fall2024/slides/lec01/lec01.pdf)
+* [Link to slides](http://wcasper.github.io/math350fall2025/slides/lec01/lec01.pdf)
 
 
 
