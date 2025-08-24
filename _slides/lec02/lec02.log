@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  23 AUG 2025 23:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  23 AUG 2025 23:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1258,19 +1258,19 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 ] [24
 
 ]
-<fig/numbers.jpg, id=734, 722.7pt x 624.3325pt>
+<fig/numbers.jpg, id=765, 722.7pt x 624.3325pt>
 File: fig/numbers.jpg Graphic file (type jpg)
 <use fig/numbers.jpg>
 Package pdftex.def Info: fig/numbers.jpg  used on input line 197.
 (pdftex.def)             Requested size: 245.83282pt x 212.37503pt.
 
-Overfull \vbox (5.06842pt too high) detected at line 197
+Overfull \vbox (12.71725pt too high) detected at line 197
  []
 
 [25
 
  <./fig/numbers.jpg>]
-<fig/pentagram.jpeg, id=763, 230.8625pt x 219.82124pt>
+<fig/pentagram.jpeg, id=797, 230.8625pt x 219.82124pt>
 File: fig/pentagram.jpeg Graphic file (type jpg)
 <use fig/pentagram.jpeg>
 Package pdftex.def Info: fig/pentagram.jpeg  used on input line 207.
@@ -1278,7 +1278,7 @@ Package pdftex.def Info: fig/pentagram.jpeg  used on input line 207.
  [26
 
  <./fig/pentagram.jpeg>]
-<fig/hippasus-death.png, id=795, 1326.9575pt x 760.8425pt>
+<fig/hippasus-death.png, id=827, 1326.9575pt x 760.8425pt>
 File: fig/hippasus-death.png Graphic file (type png)
 <use fig/hippasus-death.png>
 Package pdftex.def Info: fig/hippasus-death.png  used on input line 221.
@@ -1307,7 +1307,7 @@ Package pdftex.def Info: fig/hippasus-death.png  used on input line 221.
  [30
 
 ]
-<fig/jojo-hippasus.jpg, id=907, 1027.84pt x 1027.84pt>
+<fig/jojo-hippasus.jpg, id=945, 1027.84pt x 1027.84pt>
 File: fig/jojo-hippasus.jpg Graphic file (type jpg)
 <use fig/jojo-hippasus.jpg>
 Package pdftex.def Info: fig/jojo-hippasus.jpg  used on input line 233.
@@ -1503,21 +1503,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 463.
  (./lec02.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 463.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 463.
-
-
-Package rerunfilecheck Warning: File `lec02.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `lec02.out':
-(rerunfilecheck)             Before: 5242281CE011D6F2B53080D52D93AC38;125
-(rerunfilecheck)             After:  778E85C4FAD24A5863C809E6C24F6524;196.
+Package rerunfilecheck Info: File `lec02.out' has not changed.
+(rerunfilecheck)             Checksum: 778E85C4FAD24A5863C809E6C24F6524;196.
  ) 
 Here is how much of TeX's memory you used:
- 18590 strings out of 494847
- 344033 string characters out of 6179079
+ 18615 strings out of 494847
+ 344242 string characters out of 6179079
  429624 words of memory out of 5000000
- 21227 multiletter control sequences out of 15000+600000
+ 21252 multiletter control sequences out of 15000+600000
  55422 words of font info for 84 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  56i,19n,65p,800b,640s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1532,10 +1525,10 @@ ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on lec02.pdf (109 pages, 2142472 bytes).
+Output written on lec02.pdf (109 pages, 2149604 bytes).
 PDF statistics:
- 3252 PDF objects out of 3580 (max. 8388607)
- 3078 compressed objects within 31 object streams
+ 3366 PDF objects out of 3580 (max. 8388607)
+ 3191 compressed objects within 32 object streams
  222 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
