@@ -1,4 +1,0 @@
-\babel@toc {english}{}\relax 
-\beamer@sectionintoc {1}{Real Analysis Lecture 4}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Decimal expansions}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{The Triangle Inequality}{25}{0}{1}

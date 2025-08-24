@@ -1,4 +1,0 @@
-\babel@toc {english}{}
-\beamer@sectionintoc {1}{Real Analysis Lecture 20}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{More on differentiation}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Riemann-Stieltjes integrals}{45}{0}{1}
