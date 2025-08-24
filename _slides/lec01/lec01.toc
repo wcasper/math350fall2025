@@ -2,4 +2,3 @@
 \beamer@sectionintoc {1}{Real Analysis Lecture 1}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Foundations}{3}{0}{1}
 \beamer@subsectionintoc {1}{2}{The tenth axiom}{58}{0}{1}
-\beamer@subsectionintoc {1}{3}{Types of real numbers}{104}{0}{1}
