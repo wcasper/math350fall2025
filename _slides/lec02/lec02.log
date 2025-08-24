@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  23 AUG 2025 23:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  23 AUG 2025 23:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1190,29 +1190,29 @@ Dictionary: translator-theorem-dictionary, Language: English
 ] (./lec02.toc) [3
 
 ]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 148.
-LaTeX Font Info:    Try loading font information for U+msa on input line 148.
+LaTeX Font Info:    Try loading font information for U+msa on input line 137.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 148.
+LaTeX Font Info:    Try loading font information for U+msb on input line 137.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 148.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 137.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 148.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 137.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 148.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 137.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 148.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 137.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 137.
  [4
 
 ] [5
@@ -1257,28 +1257,69 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
 
 ] [24
 
-] [25
-
 ]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 221.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 221.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 221.
+<fig/numbers.jpg, id=734, 722.7pt x 624.3325pt>
+File: fig/numbers.jpg Graphic file (type jpg)
+<use fig/numbers.jpg>
+Package pdftex.def Info: fig/numbers.jpg  used on input line 197.
+(pdftex.def)             Requested size: 245.83282pt x 212.37503pt.
+
+Overfull \vbox (5.06842pt too high) detected at line 197
+ []
+
+[25
+
+ <./fig/numbers.jpg>]
+<fig/pentagram.jpeg, id=763, 230.8625pt x 219.82124pt>
+File: fig/pentagram.jpeg Graphic file (type jpg)
+<use fig/pentagram.jpeg>
+Package pdftex.def Info: fig/pentagram.jpeg  used on input line 207.
+(pdftex.def)             Requested size: 122.91406pt x 117.03465pt.
  [26
 
-] [27
+ <./fig/pentagram.jpeg>]
+<fig/hippasus-death.png, id=795, 1326.9575pt x 760.8425pt>
+File: fig/hippasus-death.png Graphic file (type png)
+<use fig/hippasus-death.png>
+Package pdftex.def Info: fig/hippasus-death.png  used on input line 221.
+(pdftex.def)             Requested size: 184.3758pt x 105.71616pt.
+ [27
 
-] [28
+ <./fig/hippasus-death.png>]
+File: fig/hippasus-death.png Graphic file (type png)
+<use fig/hippasus-death.png>
+Package pdftex.def Info: fig/hippasus-death.png  used on input line 221.
+(pdftex.def)             Requested size: 184.3758pt x 105.71616pt.
+ [28
 
-] [29
+]
+File: fig/hippasus-death.png Graphic file (type png)
+<use fig/hippasus-death.png>
+Package pdftex.def Info: fig/hippasus-death.png  used on input line 221.
+(pdftex.def)             Requested size: 184.3758pt x 105.71616pt.
+ [29
 
-] [30
+]
+File: fig/hippasus-death.png Graphic file (type png)
+<use fig/hippasus-death.png>
+Package pdftex.def Info: fig/hippasus-death.png  used on input line 221.
+(pdftex.def)             Requested size: 184.3758pt x 105.71616pt.
+ [30
 
-] [31
+]
+<fig/jojo-hippasus.jpg, id=907, 1027.84pt x 1027.84pt>
+File: fig/jojo-hippasus.jpg Graphic file (type jpg)
+<use fig/jojo-hippasus.jpg>
+Package pdftex.def Info: fig/jojo-hippasus.jpg  used on input line 233.
+(pdftex.def)             Requested size: 122.91406pt x 122.91202pt.
+ [31
 
-] [32
+ <./fig/jojo-hippasus.jpg>]
+File: fig/jojo-hippasus.jpg Graphic file (type jpg)
+<use fig/jojo-hippasus.jpg>
+Package pdftex.def Info: fig/jojo-hippasus.jpg  used on input line 233.
+(pdftex.def)             Requested size: 122.91406pt x 122.91202pt.
+ [32
 
 ] [33
 
@@ -1286,10 +1327,10 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 
 ] [35
 
-] [36
-
 ]
-[37
+[36
+
+] [37
 
 ] [38
 
@@ -1309,9 +1350,10 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 
 ] [46
 
-] [47
+] (./lec02.toc) [47
 
-] [48
+]
+[48
 
 ] [49
 
@@ -1319,8 +1361,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 
 ] [51
 
-]
-[52
+] [52
 
 ] [53
 
@@ -1342,11 +1383,110 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 
 ] [62
 
-] [63
+]
+[63
 
 ] [64
 
 ] [65
+
+] [66
+
+] [67
+
+] [68
+
+] [69
+
+]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 365.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 365.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 365.
+ [70
+
+] [71
+
+] [72
+
+] [73
+
+] [74
+
+] [75
+
+] [76
+
+] [77
+
+]
+[78
+
+] [79
+
+] [80
+
+] [81
+
+] [82
+
+] [83
+
+] [84
+
+] [85
+
+] [86
+
+] [87
+
+] [88
+
+] [89
+
+] [90
+
+] [91
+
+] [92
+
+]
+[93
+
+] [94
+
+] [95
+
+] [96
+
+] [97
+
+] [98
+
+] [99
+
+] [100
+
+] [101
+
+] [102
+
+] [103
+
+] [104
+
+] [105
+
+] [106
+
+]
+[107
+
+] [108
+
+] [109
 
 ]
 \tf@nav=\write6
@@ -1358,37 +1498,44 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 \tf@snm=\write8
 \openout8 = `lec02.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 319.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 463.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 463.
+ (./lec02.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 463.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 463.
 
-(./lec02.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 319.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
-Package rerunfilecheck Info: File `lec02.out' has not changed.
-(rerunfilecheck)             Checksum: 5242281CE011D6F2B53080D52D93AC38;125.
+
+Package rerunfilecheck Warning: File `lec02.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `lec02.out':
+(rerunfilecheck)             Before: 5242281CE011D6F2B53080D52D93AC38;125
+(rerunfilecheck)             After:  778E85C4FAD24A5863C809E6C24F6524;196.
  ) 
 Here is how much of TeX's memory you used:
- 18450 strings out of 494847
- 342067 string characters out of 6179079
+ 18590 strings out of 494847
+ 344033 string characters out of 6179079
  429624 words of memory out of 5000000
- 21189 multiletter control sequences out of 15000+600000
- 50778 words of font info for 77 fonts, out of 8000000 for 9000
+ 21227 multiletter control sequences out of 15000+600000
+ 55422 words of font info for 84 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 56i,19n,64p,800b,640s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,65p,800b,640s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
-hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on lec02.pdf (65 pages, 257572 bytes).
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on lec02.pdf (109 pages, 2142472 bytes).
 PDF statistics:
- 1966 PDF objects out of 2073 (max. 8388607)
- 1854 compressed objects within 19 object streams
- 133 named destinations out of 1000 (max. 500000)
- 107 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3252 PDF objects out of 3580 (max. 8388607)
+ 3078 compressed objects within 31 object streams
+ 222 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

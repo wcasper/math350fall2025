@@ -122,6 +122,150 @@
 
 \section{Real Analysis Lecture 2}
 
+
+\subsection{Types of real numbers}
+
+\begin{frame}{Inductive sets}
+A subset $S$ of $\mathbb{R}$ is called a \vocab{inductive set} if
+\begin{itemize}
+\item $1\in S$
+\item if $x\in S$ then $x+1\in S$ 
+\end{itemize}
+\pause
+Examples:
+$$\mathbb{R},\quad\mathbb{Q},\quad(0,\infty),\quad\mathbb{Z},\quad\mathbb{N},\dots$$
+\end{frame}
+
+\begin{frame}{Integers and rationals}
+How do we reverse-engineer the integers from the reals?
+\begin{itemize}
+\pause
+\item the set of \textbf{positive integers} is
+$$\mathbb{Z}_+ = \{x: \text{$x$ belongs to every inductive set}\}$$
+\pause
+\item integers are
+$$\mathbb{Z} = \{x: \text{$x$ is zero or $\pm x$ is a positive integer}\}$$
+\pause
+\item rationals are
+$$\mathbb{Q} = \{a/b: a,b\in\mathbb{Z},\ b\neq 0\}.$$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Induction}
+\textbf{Principle of Induction:}
+$$\text{If $S$ is an inductive set, then $\mathbb{Z}_+\subseteq S$}$$
+\pause
+\begin{quest}
+Waaaaait...How is this this induction?!
+\end{quest}
+\pause
+\textbf{Example:} Let's prove $n(n+1)$ is divisible by $2$ for all positive integers $n$, using the Principle of Induction.\\
+\pause
+\textbf{Proof:}\\
+\pause
+Let
+$$S = \{n\in\mathbb{Z}_+: 2 | n(n+1)\}$$.
+\pause
+We see that $1\in S$ because $2$ divides $1(1+1)$.\\
+\pause
+Now suppose $x\in S$.  (This is our usual inductive assumption).\\
+\end{frame}
+\begin{frame}{Induction}
+\textbf{Example:} Let's prove $n(n+1)$ is divisible by $2$ for all positive integers $n$, using the Principle of Induction.\\
+\textbf{Proof continued:}\\
+\pause
+Then $2$ divides $x(x+1)$, so $x(x+1) = 2k$ for some integer $k$.\\
+\pause
+This means $(x+1)(x+2) = x(x+1) + 2(x+1) = 2(k+x+1)$.\\
+\pause
+Thus $2$ divides $(x+1)(x+2)$, showing that $x+1\in S$.\\
+\pause
+Since $x+1$ was arbitrary, this shows that $S$ is an inductive set.\\
+\pause
+By the Principle of Induction, this means $\mathbb{Z}_+\subseteq S$.\\
+\pause
+In other words $n\in S$ for every positive integer $n$.\\
+\pause
+Hence $2$ divides $n(n+1)$ for every positive integers $n$.
+\end{frame}
+
+
+\begin{frame}{Types of numbers}
+\begin{center}
+\includegraphics[width=0.8\linewidth]{fig/numbers}
+\end{center}
+\end{frame}
+
+\begin{frame}{Irrational numbers}
+Numbers which are not of the form $a/b$ with $a,b\in\mathbb{Z}$ are called \vocab{irrational}.\\
+\begin{itemize}
+\item Discovered by Hippasus, a pythagorean (a student of Pythagoras)
+\end{itemize}
+\begin{center}
+\includegraphics[width=0.4\linewidth]{fig/pentagram}
+\end{center}
+\end{frame}
+
+\begin{frame}{Irrational numbers}
+Numbers which are not of the form $a/b$ with $a,b\in\mathbb{Z}$ are called \vocab{irrational}.\\
+\begin{itemize}
+\item Pythagoras drowned Hippasus at sea for his discovery
+\pause
+\item dramatic reenactment, found online:
+\pause
+\end{itemize}
+\pause
+\begin{center}
+\includegraphics[width=0.6\linewidth]{fig/hippasus-death}
+\end{center}
+\end{frame}
+
+\begin{frame}{Irrational numbers}
+Numbers which are not of the form $a/b$ with $a,b\in\mathbb{Z}$ are called \vocab{irrational}.\\
+\begin{itemize}
+\item Pythagoras drowned Hippasus at sea for his discovery
+\item anime style:
+\pause
+\end{itemize}
+\begin{center}
+\includegraphics[width=0.4\linewidth]{fig/jojo-hippasus}
+\end{center}
+\end{frame}
+
+\begin{frame}{Challenge!}
+\begin{prob}
+Can you prove that if $n\in\mathbb{Z}_+$ is not a perfect square, then $\sqrt{n}$ is irrationial?
+(Apostol Theorem 1.10)
+\end{prob}
+\pause
+\begin{soln}
+We prove by contradiction. \pause
+Assume $\sqrt{n} = a/b$ for integers $a,b$. \pause
+Without loss of generality, we may assume $\gcd(a,b) = 1$. \pause
+Then $b^2n = a^2$. \pause
+Since $\gcd(a,b) = 1$, $a^2$ must divide $n$, ie. $n=n'a^2$. \pause
+It follows that $b^2n' = 1$, so $b^2$ divides $1$. \pause
+This implies $n'$ divides $1$, so $n'=\pm 1$. \pause
+Since $n>0$, $n'>0$ so $n'=1$. \pause
+Thus $n=a^2$, which is a contradiction.
+\end{soln}
+\end{frame}
+
+\begin{frame}{Algebraic and Transcendental}
+Irrational numbers can be further divided into to categories
+\pause
+\begin{enumerate}
+\item \textbf{algebraic numbers:} numbers which are roots of polynomials with integer coefficients, like
+$$\sqrt{2},\quad\sqrt{3},\quad\text{and}\quad\sqrt[3]{\sqrt{5}  + \sqrt{7}}.$$
+\pause
+\item \textbf{transcendental numbers:} numbers which are not algebraic, like
+$$\pi,\quad e,\quad e^\pi,\quad\text{and maybe}\quad\pi+e?$$
+\pause
+\item transcendentals are mysterious ... but most real numbers are transcendental!
+\end{enumerate}
+\end{frame}
+
+
 \subsection{Suprema and Infima}
 \begin{frame}{Completeness Axiom}
 Last time, we finished with the Completeness Axiom:
