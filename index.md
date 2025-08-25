@@ -15,7 +15,7 @@ title: Math 350 Advanced Calculus
 
 **Course meetings:** Monday and Wednesday 10:00AM-11:50AM
 
-**Office hours:** Tu 1-2PM and Th 12-2PM and by appointment
+**Office hours:** TBA and by appointment
 
 **Syllabus:** <a target="_parent" href="extras/syllabus.html">Course syllabus (link)</a>
 
