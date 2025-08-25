@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Lecture 1
+title:  Lecture 2
 ---
 
 ## Properies of real numbers
@@ -16,7 +16,7 @@ Apostol pp. 1.1-1.15
 
 ### Slides
 
-* [Link to slides](http://wcasper.github.io/math350fall2025/slides/lec01/lec01.pdf)
+* [Link to slides](http://wcasper.github.io/math350fall2025/slides/lec02/lec02.pdf)
 
 
 
