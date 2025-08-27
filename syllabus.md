@@ -13,7 +13,7 @@ permalink: /syllabus
 
 **Office hourse:** TBA.  Additional office hours are always available by request.
 
-**Course website:** we will use Canvas website (Spring 2025 MATH 350-2 18781), but will link additional information from a corresponding <a target="_parent" href="https://wcasper.github.io/math350spring2025">Github Pages site (link)</a> which you may find more convenient for pulling material.
+**Course website:** we will use Canvas website (Spring 2025 MATH 350-2 18781), but will link additional information from a corresponding <a target="_parent" href="https://wcasper.github.io/math350fall2025">Github Pages site (link)</a> which you may find more convenient for pulling material.
 
 ## Course meeting information
 * Section: 01 and 02
