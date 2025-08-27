@@ -273,7 +273,7 @@ Last time, we finished with the Completeness Axiom:
 \begin{enumerate}[\text{A}1]
 \setcounter{enumi}{9}
 \pause
-\item \textbf{completeness axiom}: if $S$ is any subset of real numbers which is bounded above, then it has a supremum $\sup(S)$
+\item \textbf{completeness axiom}: if $S$ is any nonempty subset of real numbers which is bounded above, then it has a supremum $\sup(S)$
 \end{enumerate}
 \pause
 \textbf{Examples:}
@@ -293,7 +293,7 @@ $$\{3,3.1,3.14,3.141,3.1415,3.14159,3.141592,\dots\}.$$
 
 \begin{frame}{Challenge}
 \begin{prob}
-Prove that if $A$ is a set of integers that is bounded above, then $A$ has a maximum.
+Prove that if $A$ is a nonempty set of integers that is bounded above, then $A$ has a maximum.
 \end{prob}
 \end{frame}
 
@@ -334,7 +334,7 @@ $$\text{an infimum is a \bf{greatest lower bound}}$$
 \begin{frame}{Properties of Suprema}
 The first property of suprema is that they must be arbitrarily close to elements of the set.
 \begin{thm}[Approximation Property]
-Let $S\subseteq\mathbb{R}$ be bounded above, and let $b = \sup(S)$.
+Let $S\subseteq\mathbb{R}$ be nonempty and bounded above, and let $b = \sup(S)$.
 Then for all $\epsilon > 0$, there exists $a\in S$ with
 $$b-\epsilon < a \leq b.$$
 \end{thm}
@@ -388,7 +388,7 @@ We've just shown that $e^1=e$ exists.
 \begin{frame}{Properties of Suprema}
 Also, suprema play nicely with addition.
 \begin{thm}[Additive Property]
-Let $A,B\subseteq\mathbb{R}$ be bounded above set
+Let $A,B\subseteq\mathbb{R}$ be nonempty, bounded above sets.
 $$C = \{x+y: x\in A,\ y\in B\}.$$
 Then $C$ is bounded above and
 $$\sup(C) = \sup(A) + \sup(B).$$
