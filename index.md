@@ -17,7 +17,7 @@ title: Math 350 Advanced Calculus
 
 **Office hours:** TBA and by appointment
 
-**Syllabus:** <a target="_parent" href="extras/syllabus.html">Course syllabus (link)</a>
+**Syllabus:** <a target="_parent" href="syllabus.html">Course syllabus (link)</a>
 
 **First steps**
 
