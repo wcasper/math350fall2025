@@ -1,0 +1,4 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Real Analysis Lecture 3}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Set basics}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Set algebra}{38}{0}{1}
