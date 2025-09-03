@@ -314,7 +314,135 @@ $$B-\bigcap_{i\in I} A_i = \bigcup_{i\in I} (B-A_i)$$
 \end{prob}
 \end{frame}
 
+\begin{frame}{Relations}
+The \textbf{Cartesian product} of $A$ and $B$ is
+$$A\times B = \{(a,b): a\in A,\ b\in B\}.$$
+\pause
+A \textbf{relation} $\mathcal R$ from $A$ to $B$ is a subset of $A\times B$.\\
+\pause
+$$\text{\color{red}NOTATION:}\quad a\mathcal R b\quad\text{means}\quad (a,b)\in \mathcal R.$$
+\pause
+Domain and codomain:
+\pause
+\begin{align*}
+\pause
+\text{dom}(\mathcal{R}) &= \{a\in A: \exists b\in B,\ a\mathcal R b\}\\
+\text{codom}(\mathcal{R}) &= \{b\in B: \exists a\in A,\ a\mathcal R b\}
+\end{align*}
+\end{frame}
 
+\begin{frame}{Relations}
+A relation $\mathcal R$ from $A$ to $A$ is called a \textbf{relation on} $A$.  A relation on $A$ is
+\begin{itemize}
+\pause
+\item \textbf{reflexive} if $a\mathcal Ra$ for all $a\in A$
+\pause
+\item \textbf{symmetric} if $a\mathcal Rb$ implies $b\mathcal Ra$ for all $a,b\in A$
+\pause
+\item \textbf{transitive} if $a\mathcal Rb$ and $b\mathcal Rc$ implies $a\mathcal Rc$ for all $a,b,c\in\mathcal A$
+\end{itemize}
+\pause
+An \textbf{equivalence relation} satisfies all three properties.\\
+\pause
+Examples:
+\pause
+\begin{itemize}
+\pause
+\item $<\ = \{(x,y): y-x\in (0,\infty)\}$ is transitive but not reflexive or symmetric on $\mathbb{R}$
+\pause
+\item $\leq\ = \{(x,y): y-x\in [0,\infty)\}$ is reflexive and transitive but not symmetric on $\mathbb{R}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Challenge!}
+\begin{prob}
+Give an example of a relation on $\mathbb{R}$ which is symmetric and transitive but not reflexive.
+\end{prob}
+\end{frame}
+
+\begin{frame}{Challenge!}
+\begin{prob}
+Give an example of a relation on $\mathbb{R}$ which is reflexive and symmetric but not transitive.
+\end{prob}
+\end{frame}
+
+\begin{frame}{Functions}
+A \textbf{function} from $A$ to $B$ is a relation $\mathcal R$ from $A$ to $B$ with the property
+\pause
+$$a\mathcal Rb\ \text{and}\ a\mathcal Rc\quad\text{implies}\quad b=c.$$
+\pause
+If a relation $\mathcal R$ is a function, we usually use a symbol like $f$.\\
+\pause
+\begin{align*}
+\text{\color{red}NOTATION:}&\quad f: A\rightarrow B\quad\text{means $f$ is a function from $A$ to $B$}\\
+\text{\color{red}NOTATION:}&\quad f(a) = b\quad\text{means}\quad (a,b)\in f.
+\end{align*}
+\pause
+The set $$\img(f) = \{f(a): a\in A\}$$ is called the \textbf{range} or \textbf{image} of $f$
+\end{frame}
+
+\begin{frame}{Challenge!}
+\begin{prob}
+Determine all the equivalence relations on $\mathbb{R}$ which are also functions.
+\end{prob}
+\pause
+\begin{soln}
+$f=\mathcal R$ must be reflexive, so $x\mathcal Rx$ for all $x$\\
+\pause
+This means $f(x) = x$ for all $x$.\\
+\pause
+Thus the only function which is an equivalence relation is the identity function
+$$f(x) = x.$$
+\end{soln}
+\end{frame}
+
+\begin{frame}{Properties of functions}
+A function $f$ from $A$ to $B$ is called \textbf{one-to-one} or \textbf{injective} if 
+\pause
+$$f(x) = f(y) \quad\text{implies}\quad x=y\ \ \text{for all $x,y\in A$}.$$
+\pause
+It is called \textbf{onto} or \textbf{surjective} if $\img(f) = B$, or equivalently
+$$\text{for all $b\in B$ there exists $a\in A$ with $f(a) =b$}.$$
+\pause
+If it satisfies both properties, it is called \textbf{bijective}.
+\end{frame}
+
+\begin{frame}{Inverses}
+The \textbf{converse} of a relation $\mathcal R$ from $A$ to $B$ is the relation
+\pause
+$$\check{\mathcal R} = \{(b,a)\in B\times A: a\mathcal R b\}.$$
+\pause
+If $f$ is  function, then $\check f$ may or not be a function.\\
+\pause
+If it is, we call it the \vocab{inverse} of $f$.
+\end{frame}
+
+\begin{frame}{Compositions}
+The composition of $f: A\rightarrow B$ and $g: B\rightarrow C$ is the function
+\pause
+$$g\circ f: A\rightarrow C$$
+\pause
+with domain $A$ and codomain $C$ defined by
+\pause
+$$(g\circ f)(x)  = g(f(x)).$$
+\end{frame}
+
+\begin{frame}{Sequences}
+A \textbf{finite sequence} is a function $f: \{1,2,\dots,n\}\rightarrow \mathbb{R}$.\\
+\pause
+An \textbf{infinite sequence} is a function $f: \mathbb{Z}_+\rightarrow \mathbb{R}$.\\
+\pause
+$$\text{\color{red}NOTATION:}\quad f_n\quad\text{indicates the value}\ f(n)$$
+\pause
+$$\text{\color{red}NOTATION:}\quad \{f_n\}\quad\text{is another way of writing the function}\ f$$
+\pause
+If $k:\mathbb{Z}_+\rightarrow\mathbb{Z}_+$ is a function which is \vocab{strictly increasing}, meaning
+$$m < n\quad\Rightarrow\quad k(m) < k(n),$$
+\pause
+then the composition $f\circ k: \mathbb{Z}_+\rightarrow \mathbb{R}$ forms a sequence called a \vocab{subsequence} of $f$.
+\pause
+$$\text{\color{red}NOTATION:}\quad \{f_{k(n)}\}\ \text{or}\ \{f_{k_n}\}\quad\text{both really mean}\ f\circ k$$
+\end{frame}
 \end{document}
 
 
