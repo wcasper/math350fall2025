@@ -33,8 +33,8 @@ $$C = \{a-b: a\in A,\ b\in B\}.$$
 
 Prove that $$\sup(C)=\sup(A)-\inf(B)$$.
 
-**Problem 6:** Let $$I=\mathbb Z_+$$ and $$A_i = (-1/i,1/i): i\in I$$.  Prove that
+**Problem 6:** Let $$I=\mathbb Z_+$$ and $$A_i = (-1/i,1/i)$$ for all $$i\in I$$.  Prove that
 
-$$\bigcap_{i\in I\} A_i = \{0\}.$$
+$$\bigcap_{i\in I} A_i = \{0\}.$$
 
 
