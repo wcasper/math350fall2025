@@ -25,7 +25,7 @@ You will be graded based on *completion* of all of the assigned problems, along 
 
 **Problem 3:** Show that between any two different real numbers you can also find an irrational number.
 
-**Problem 4:** Prove the **Comparison Property for Suprema** that if $$A$$ and $$B$$ are nonempty sets and $$B$$ is bounded above, then $$A$$ is also bounded above and $$\sup(A)\leq \sup(B)$$.
+**Problem 4:** Prove the **Comparison Property for Suprema** that if $$A$$ and $$B$$ are nonempty sets with $$A\subseteq B$$ and $$B$$ is bounded above, then $$A$$ is also bounded above and $$\sup(A)\leq \sup(B)$$.
 
 **Problem 5:** Suppose that $$A$$ and $$B$$ are nonempty sets with $$A$$ bounded above and $$B$$ bounded below and let
 
