@@ -17,6 +17,8 @@ You will be graded based on *completion* of all of the assigned problems, along 
 
 **Remember:** Success in any math class is based on *practice*.  The assigned homework problems are the **bare minimum**.  You should strive to do as many problems as possible from the textbook.
 
+**Note:** All sets will be subsets of $$\mathbb R$$ unless otherwise stated.
+
 ### Problems
 
 **Problem 1:** The **Well-ordering Principal** says that every nonempty subset $$S\subseteq \mathbb{Z}_+$$ has a smallest element.  Use the Completeness Axiom to prove the Well-ordering Principal.
