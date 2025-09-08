@@ -1,0 +1,4 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Real Analysis Lecture 4}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Functions}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{More with cardinality}{65}{0}{1}
