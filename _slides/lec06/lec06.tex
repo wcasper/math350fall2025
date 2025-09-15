@@ -1,0 +1,357 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This file is a template using the "beamer" package to create slides for a talk or presentation
+% - Giving a talk on some subject.
+% - The talk is between 15min and 45min long.
+% - Style is ornate.
+
+% MODIFIED by Jonathan Kew, 2008-07-06
+% The header comments and encoding in this file were modified for inclusion with TeXworks.
+% The content is otherwise unchanged from the original distributed with the beamer package.
+
+\documentclass{beamer}
+\setbeamercovered{invisible}
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[utf8]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%%% MATH RELATED
+
+\input{macros.tex}
+
+\title{MATH 350-2 Advanced Calculus} 
+\subtitle
+{} % (optional)
+
+\author[W.R. Casper] % (optional, use only with lots of authors)
+{W.R. Casper}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[California State University Fullerton] % (optional, but mostly needed)
+{
+  Department of Mathematics\\
+  California State University Fullerton}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:  
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+\section{Real Analysis Lecture 6}
+\subsection{More on Open Sets}
+
+\begin{frame}{Unions of open sets are open}
+\begin{thm}[Open Union Theorem]
+Suppose that $\{U_i: i\in I\}$ is an arbitrary family of open sets.
+Then $\bigcup_{i\in I} U_i$ is open.
+\end{thm}
+\pause
+\begin{proof}
+\pause
+Suppose that $\vec x\in \bigcup_{i\in I} U_i$.\\
+\pause
+Then there exists $j\in I$ with $\vec x\in U_j$.\\
+\pause
+Since $U_j$ is open, this means $\vec x$ is an interior point of $U_j$.\\
+\pause
+Therefore there exists $r>0$ such that $B(\vec x; r)\subseteq U_j$.\\
+\pause
+This means $B(\vec x; r)\subseteq \bigcup_{i\in I} U_i$.\\
+\pause
+Thus $\vec x$ is an interior point of $\bigcup_{i\in I} U_i$.\\
+\pause
+Since $\vec x$ is arbitrary, this proves that $\bigcup_{i\in I} U_i$ is open.
+\end{proof}
+\end{frame}
+
+\begin{frame}{Finite intersections of open sets are open}
+\begin{thm}[Open Intersection Theorem]
+Suppose that $U_1,U_2,\dots,U_n$ are open sets.
+Then $\bigcap_{i=1}^n U_i$ is open.
+\end{thm}
+\pause
+\begin{proof}
+\pause
+Suppose that $\vec x\in \bigcap_{i=1}^n U_i$.\\
+\pause
+Then for all $i$, $\vec x\in U_i$.\\
+\pause
+Since $U_i$ is open, this means $\vec x$ is an interior point of $U_i$.\\
+\pause
+Therefore there exists $r_i>0$ such that $B(\vec x; r_i)\subseteq U_i$.\\
+\pause
+Take $r = \min\{r_i: 1\leq i \leq n\}$.\\
+\pause
+This means $B(\vec x; r)\subseteq B(\vec x; r_i)\subseteq U_i$ for all $i$.\\
+\pause
+Therefore $B(\vec x; r)\subseteq \bigcap_{i=1}^n U_i$.\\
+\pause
+Thus $\vec x$ is an interior point of $\bigcap_{i=1}^n U_i$.\\
+\pause
+Since $\vec x$ is arbitrary, this proves that $\bigcap_{i=1}^n U_i$ is open.
+\end{proof}
+\end{frame}
+
+\begin{frame}{Challenge}
+\begin{prob}
+Show that the infinite intersection
+$$\bigcap_{n=1}^\infty (-\frac{1}{n},\frac{1}{n})$$
+is not open.
+\end{prob}
+\end{frame}
+
+\begin{frame}{Component intervals}
+Let $U\subseteq \mathbb{R}$ be open.
+\pause
+\begin{defn}
+A \textbf{component interval} of $U$ is an interval $I$ with $I\subseteq U$ and with the property that if $J$ is an interval and $I\subsetneq J$, then $J\nsubseteq U$.
+\end{defn}
+\begin{itemize}
+\pause
+\item $(0,1)$ is a component interval of $\mathbb{R}\diff \{0,1,2,3\}$
+\pause
+\item $(-\infty,0)$ is also a component interval of $\mathbb{R}\diff \{0,1,2,3\}$
+\pause
+\item we will show all open sets of $\mathbb{R}$ are made of component intervals!
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Component intervals}
+\begin{lemma}
+If $I_1$ and $I_2$ are two component intervals of an open subset $U\subseteq\mathbb{R}$, then $I_1=I_2$ or $I_1\cap I_2 = \varnothing$.
+\end{lemma}
+\pause
+\begin{proof}
+\pause
+Suppose that $I_1\cap I_2 \neq \varnothing$.\\
+\pause
+Then $J := I_1\cup I_2$ is an interval.\\
+\pause
+Also $I_1\subseteq U$ and $I_2\subseteq U$, so $J\subseteq U$.\\
+\pause
+Since $I_i$ is a component interval and $I_i\subseteq J\subseteq U$, we have $I_i = J$.\\
+\pause
+In particular $I_1 = J = I_2$.
+\end{proof}
+\end{frame}
+
+\begin{frame}{Component intervals}
+\begin{thm}[Apostol 3.10]
+If $U\subseteq\mathbb{R}$ is open and $x\in U$, then there is a unique component interval of $U$ containing $x$.
+\end{thm}
+\pause
+\begin{proof}
+Uniqueness follows from previous Lemma, so we only need existence.\\
+\pause
+Suppose that $x\in U$ and consider
+$$A = \{a: (a,x)\subseteq U\},\quad\text{and}\quad B = \{b: (x,b)\subseteq U\}$$
+\pause
+If $A$ is not bounded below, let $a=-\infty$.  Otherwise, let $a = \inf (A)$.\\
+\pause
+If $B$ is not bounded above, let $b=\infty$.  Otherwise, let $b = \sup (B)$.\\
+\pause
+Claim: $(a,b)$ is a component interval of $U$ containing $x$.
+\end{proof}
+\end{frame}
+
+\begin{frame}{Challenge}
+\begin{prob}
+Prove that $(a,b)$ is a component interval of $U$.
+\end{prob}
+\end{frame}
+
+\begin{frame}{Open subsets of $\mathbb{R}$}
+\begin{thm}[Representation Theorem for Open Sets in $\mathbb{R}$]
+If $U\subseteq\mathbb{R}$ is open, then $U$ is the union of a countable family of disjoint open intervals.
+\end{thm}
+\pause
+\begin{proof}
+From the previous theorem, each $x\in U$ is contained in a unique component interval $I_x$ of $U$.\\
+\pause
+Therefore
+$$U = \bigcup_{x\in U} I_x$$
+is a union of open intervals!\\
+\pause
+{\color{red}Uh oh ... this isn't a \textbf{countable} union.}
+\end{proof}
+\end{frame}
+
+\begin{frame}{Open subsets of $\mathbb{R}$}
+\begin{thm}[Representation Theorem for Open Sets in $\mathbb{R}$]
+If $U\subseteq\mathbb{R}$ is open, then $U$ is the union of a countable family of disjoint open intervals.
+\end{thm}
+\begin{proof}
+Instead, we consider rational points $U\cap\mathbb{Q}$.\\
+\pause
+If $x\in U$, then $x\in I_x\subseteq U$.\\
+\pause
+Any interval contains a rational number $r\in I_x$.\\
+\pause
+Since different component intervals must be disjoint, $I_x=I_r$.\\
+\pause
+Thus $x\in \bigcup_{r\in U\cap\mathbb{Q}} I_r\subseteq U$.\\
+\pause
+Since $x$ was arbitrary, 
+$$U= \bigcup_{r\in U\cap\mathbb{Q}} I_r$$
+\end{proof}
+\end{frame}
+
+\subsection{Closed Sets}
+
+\begin{frame}{Closed sets}
+\begin{defn}
+A set $A\subseteq\mathbb{R}^n$ is called \vocab{closed} if it is the complement of an open set, or equivalently if its complement $\mathbb{R}^n\backslash A$ is open.
+\end{defn}
+\pause
+\textbf{Examples:}
+\begin{itemize}
+\pause
+\item singleton sets!
+\pause
+\item products of closed intervals
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Challenge!}
+\begin{prob}
+Prove that a singleton set
+$$A = \{\vec a\}$$
+in $\mathbb{R}^n$ is closed.
+\end{prob}
+\pause
+\begin{soln}
+We must show $U = \mathbb{R}^n\backslash\{\vec a\}$ is open.\\\pause
+Suppose $\vec x\in U$.\ \pause
+We must show $\vec x$ is an interior point of $U$.\\\pause
+Take $r = |\vec x-\vec a|$.\ \pause Then $B(\vec x; r)$ does not contain $\vec a$.\\\pause
+Therefore $B(\vec x; r)\subseteq U$, so that $\vec x$ is an interior point.\\\pause
+Since $\vec x$ was arbitrary, this proves $U$ is open.
+\end{soln}
+\end{frame}
+
+\begin{frame}{Challenge!}
+\begin{prob}
+Prove that the \textbf{closed square}
+$$[a,b]\times [c,d] = \{(x,y)\in\mathbb{R}^2: a \leq x \leq b,\ c\leq y\leq d\}$$
+is a closed set.
+\end{prob}
+\pause
+\begin{soln}
+$\mathbb{R}^2\backslash ([a,b]\times [c,d])$ is the same as
+$$((-\infty,a)\times \mathbb{R})\cup ((b,\infty)\times \mathbb{R})\cup(\mathbb{R}\times (-\infty,c))\cup (\mathbb{R}\times (d,\infty))$$
+\pause
+Union of open sets is open!
+\end{soln}
+\end{frame}
+
+
+\begin{frame}{Adherent and Accumulation Points}
+\begin{defn}
+A point $\vec x\in \mathbb{R}^n$ is called an \textbf{adherent point} if for all $r > 0$ the ball $B(\vec x; r)$ contains at least one element of $A$.\\
+\pause
+It is called an \textbf{accumulation point} if for all $r > 0$ the ball $B(\vec x; r)$ contains at least one element of $A$ {\color{red} different from $\vec x$}.
+\end{defn}
+\pause
+\textbf{Examples:}
+\begin{itemize}
+\pause
+\item every point in $A$ is adherent
+\pause
+\item accumulation points are adherent points
+\pause
+\item $-1$ is an accumulation point of $(-1,1)$.
+\pause
+\item suprema and infima are accumulation points!
+\pause
+\item $0$ is an accumulation point of $\{1/1,1/2,1/3,\dots\}$
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
+
+
