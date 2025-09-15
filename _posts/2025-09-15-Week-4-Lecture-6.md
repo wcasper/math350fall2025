@@ -6,7 +6,7 @@ title:  Lecture 6
 ## Open balls and open sets
 
 ### Key words
-open sets
+open sets, components, closed sets, accumulation points, adherent points
 
 ### Practice problems
 Apsotol problems 3.1, 3.2, 3.4, 3.6, 3.8, 3.11, 3.13, 3.16
