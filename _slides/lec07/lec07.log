@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  17 SEP 2025 09:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  17 SEP 2025 10:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1264,79 +1264,79 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 ] [27
 
 ]
-Overfull \vbox (9.8567pt too high) detected at line 223
+Overfull \vbox (17.50554pt too high) detected at line 223
  []
 
 [28
 
 ]
-Overfull \vbox (9.8567pt too high) detected at line 223
+Overfull \vbox (17.50554pt too high) detected at line 223
  []
 
 [29
 
 ]
-Overfull \vbox (9.8567pt too high) detected at line 223
+Overfull \vbox (17.50554pt too high) detected at line 223
  []
 
 [30
 
 ]
-Overfull \vbox (9.8567pt too high) detected at line 223
+Overfull \vbox (17.50554pt too high) detected at line 223
  []
 
 [31
 
 ]
-Overfull \vbox (9.8567pt too high) detected at line 223
+Overfull \vbox (17.50554pt too high) detected at line 223
  []
 
 [32
 
 ]
-Overfull \vbox (9.8567pt too high) detected at line 223
+Overfull \vbox (17.50554pt too high) detected at line 223
  []
 
 [33
 
 ]
-Overfull \vbox (9.8567pt too high) detected at line 223
+Overfull \vbox (17.50554pt too high) detected at line 223
  []
 
 [34
 
 ]
-Overfull \vbox (9.8567pt too high) detected at line 223
+Overfull \vbox (17.50554pt too high) detected at line 223
  []
 
 [35
 
 ]
-Overfull \vbox (9.8567pt too high) detected at line 223
+Overfull \vbox (17.50554pt too high) detected at line 223
  []
 
 [36
 
 ]
-Overfull \vbox (9.8567pt too high) detected at line 223
+Overfull \vbox (17.50554pt too high) detected at line 223
  []
 
 [37
 
 ]
-Overfull \vbox (9.8567pt too high) detected at line 223
+Overfull \vbox (17.50554pt too high) detected at line 223
  []
 
 [38
 
 ]
-Overfull \vbox (9.8567pt too high) detected at line 223
+Overfull \vbox (17.50554pt too high) detected at line 223
  []
 
 [39
 
 ]
-Overfull \vbox (9.8567pt too high) detected at line 223
+Overfull \vbox (17.50554pt too high) detected at line 223
  []
 
 [40
@@ -1487,55 +1487,55 @@ Overfull \vbox (9.8567pt too high) detected at line 223
 [110
 
 ]
-Overfull \vbox (8.94032pt too high) detected at line 483
+Overfull \vbox (16.58916pt too high) detected at line 483
  []
 
 [111
 
 ]
-Overfull \vbox (8.94032pt too high) detected at line 483
+Overfull \vbox (16.58916pt too high) detected at line 483
  []
 
 [112
 
 ]
-Overfull \vbox (8.94032pt too high) detected at line 483
+Overfull \vbox (16.58916pt too high) detected at line 483
  []
 
 [113
 
 ]
-Overfull \vbox (8.94032pt too high) detected at line 483
+Overfull \vbox (16.58916pt too high) detected at line 483
  []
 
 [114
 
 ]
-Overfull \vbox (8.94032pt too high) detected at line 483
+Overfull \vbox (16.58916pt too high) detected at line 483
  []
 
 [115
 
 ]
-Overfull \vbox (8.94032pt too high) detected at line 483
+Overfull \vbox (16.58916pt too high) detected at line 483
  []
 
 [116
 
 ]
-Overfull \vbox (8.94032pt too high) detected at line 483
+Overfull \vbox (16.58916pt too high) detected at line 483
  []
 
 [117
 
 ]
-Overfull \vbox (8.94032pt too high) detected at line 483
+Overfull \vbox (16.58916pt too high) detected at line 483
  []
 
 [118
 
 ]
-Overfull \vbox (8.94032pt too high) detected at line 483
+Overfull \vbox (16.58916pt too high) detected at line 483
  []
 
 [119
@@ -1571,21 +1571,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 507.
  (./lec07.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 507.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 507.
-
-
-Package rerunfilecheck Warning: File `lec07.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `lec07.out':
-(rerunfilecheck)             Before: 4542B62453AB03BFC98C986C3157B019;126
-(rerunfilecheck)             After:  C48CED5AF6AEDB6F89B763D09412F5DE;187.
+Package rerunfilecheck Info: File `lec07.out' has not changed.
+(rerunfilecheck)             Checksum: C48CED5AF6AEDB6F89B763D09412F5DE;187.
  ) 
 Here is how much of TeX's memory you used:
- 18532 strings out of 494847
- 342837 string characters out of 6179079
+ 18573 strings out of 494847
+ 343174 string characters out of 6179079
  426624 words of memory out of 5000000
- 21147 multiletter control sequences out of 15000+600000
+ 21188 multiletter control sequences out of 15000+600000
  34934 words of font info for 54 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  56i,19n,65p,800b,640s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1599,10 +1592,10 @@ public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
 hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on lec07.pdf (127 pages, 463550 bytes).
+Output written on lec07.pdf (127 pages, 470133 bytes).
 PDF statistics:
- 3763 PDF objects out of 4296 (max. 8388607)
- 3571 compressed objects within 36 object streams
+ 3896 PDF objects out of 4296 (max. 8388607)
+ 3702 compressed objects within 38 object streams
  258 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
