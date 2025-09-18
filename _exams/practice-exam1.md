@@ -94,7 +94,7 @@ $$C=\bigcap_{i\in I} A_i$$
 
 (b) Prove that $$\frac{1}{5}$$ is not an interior point of $$C$$
 
-(c) Prove that $$\frac{1}{5}$$ is an adherent point of $$C$$ 
+(c) Prove that $$\frac{1}{5}$$ is an accumulation point of $$C$$ 
 
 
 
