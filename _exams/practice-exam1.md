@@ -83,7 +83,7 @@ c) Carefully prove that the supremum you found is the supremum of the set
 Consider the family of sets $$\{A_i: i\in I\}$$
 with index set $$I=\mathbb{Z}_+$$ and with 
 
-$$A_i = \{x\in (0,1): \lfloor 10^ix\rfloor \neq 5\},$$
+$$A_i = \{x\in (0,1): \lfloor 10^ix\rfloor \neq 5\mod 10\},$$
 
 where here $$\lfloor y\rfloor$$ denotes the greatest integer less than or equal to $$y$$.
 Consider the intersection
