@@ -221,32 +221,6 @@ Prove that an open ball is an open set.
 \end{prob}
 \end{frame}
 
-\begin{frame}{Unions of open sets are open}
-\begin{thm}[Open Union Theorem]
-Suppose that $\{U_i: i\in I\}$ is an arbitrary family of open sets.
-Then $\bigcup_{i\in I} U_i$ is open.
-\end{thm}
-\pause
-\begin{proof}
-\pause
-Suppose that $\vec x\in \bigcup_{i\in I} U_i$.\\
-\pause
-Then there exists $j\in I$ with $\vec x\in U_j$.\\
-\pause
-Since $U_j$ is open, this means $\vec x$ is an interior point of $U_j$.\\
-\pause
-Therefore there exists $r>0$ such that $B(\vec x; r)\subseteq U_j$.\\
-\pause
-This means $B(\vec x; r)\subseteq \bigcup_{i\in I} U_i$.\\
-\pause
-Thus $\vec x$ is an interior point of $\bigcup_{i\in I} U_i$.\\
-\pause
-Since $\vec x$ is arbitrary, this proves that $\bigcup_{i\in I} U_i$ is open.
-\end{proof}
-\end{frame}
-
-
-
 \end{document}
 
 
