@@ -195,7 +195,7 @@ for all $$n\in\mathbb{Z}_+$$.  Therefore $$2$$ is an upper bound for the set.
 
 Moreover, 
 
-$$\frac{4n-3}{n^2+2n} < \frac{4(n-1)}{n(n+2)} < \frac{4}{(n-1)(n+2)} = \frac{4}{n+2}.$$
+$$\frac{4n-3}{n^2+2n} < \frac{4(n-1)}{n(n+2)} < \frac{4}{(n-1)(n+2)} < \frac{4}{n+2}.$$
 
 This means that
 
