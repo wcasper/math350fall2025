@@ -25,7 +25,7 @@ You will be graded based on *completion* of all of the assigned problems, along 
 
 Decide, with proof, whether each of the following subsets of $$\mathbb R^2$$ are open, closed or neither.
 
-a) all points $$(x,y)$$ such that $$x^2 - y^2  < 1
+a) all points $$(x,y)$$ such that $$x^2 - y^2  < 1$$
 
 b) all points $$(x,y)$$ such that $$x > 0$$
 
@@ -58,7 +58,7 @@ b) For the set $$A$$ you chose, given an example of a countable open cover of $$
 
 **Problem 5:** 
 
-Consider the family of open sets $$\{U_i: i\in I\}$$ in $$\mathbb R^2$, with index set $$I = \mathbb Q$$ and
+Consider the family of open sets $$\{U_i: i\in I\}$$ in $$\mathbb R^2$$, with index set $$I = \mathbb Q$$ and
 
 $$U_r = B((r,r),r) = \{(x,y)\in\mathbb R^2: \sqrt{(x-r)^2+(y-r)^2} < r\}.$$
 
