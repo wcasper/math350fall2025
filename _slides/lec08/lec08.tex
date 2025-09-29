@@ -160,7 +160,7 @@ A \textbf{subcover} is a family $\{U_j: j\in J\}$ with $J\subseteq I$ which is s
 \pause
 \item $\{\mathbb{R}\}$ is an open cover of the interval $(0,1]$
 \pause
-\item $\{(0,1/2), (1/2, 2)\}$ is an open cover of the interval $(0,1]$
+\item $\{(0,1/2), (1/3, 2)\}$ is an open cover of the interval $(0,1]$
 \pause
 \item $\{(\frac{1}{n},\frac{n+1}{n}): n\in\mathbb{Z}_+\}$ is an open cover of $(0,1]$
 \end{itemize}
@@ -301,98 +301,6 @@ Show that if $\{U_i: i\in I\}$ has a finite subcover, then $\vec x$ can't be an 
 \end{prob}
 \end{frame}
 
-\begin{frame}{Bolzano-Weierstrass Theorem}
-So far, we have seen compact sets are closed and bounded.\\
-\pause
-We want to prove the opposite is true too!\\
-\pause
-This will require obtaining some other fundamental results about real numbers.
-\pause
-\begin{thm}[Bolzano-Weierstrass Theorem]
-A bounded set $A\subseteq \mathbb{R}^n$ with infinitely many points must have an accumulation point.
-\end{thm}
-\end{frame}
-
-\begin{frame}{Cantor Intersection Theorem}
-\begin{thm}[Cantor Intersection Theorem]
-Suppose that $C_1,C_2,C_3,\dots$ are non-empty closed, bounded sets with $C_{i+1}\subseteq C_i$ for all $i\in I = \mathbb{Z}_+$.
-Then $\bigcap_{i\in I} C_i$ is also non-empty.
-\end{thm}
-\pause
-\begin{proof}
-\pause
-If $C_i$ is finite for some $i$, then the proof is simple. Assume otherwise.\\
-\pause
-Then choose $\vec x_i\in C_i$ for all $i\in I$ all distinct.\\
-\pause
-The set $A = \{\vec x_i: i\in \mathbb{Z}_+\}$ is infinite and bounded (because it is contained in $C_1$).\\
-\pause
-Therefore the Bolzano-Weierstrass Theorem tells us it has an accumulation point $\vec x$.\\
-\end{proof}
-\end{frame}
-
-\begin{frame}{Cantor Intersection Theorem}
-\begin{thm}[Cantor Intersection Theorem]
-Suppose that $C_1,C_2,C_3,\dots$ are non-empty closed, bounded sets with $C_{i+1}\subseteq C_i$ for all $i\in I = \mathbb{Z}_+$.
-Then $\bigcap_{i\in I} C_i$ is also non-empty.
-\end{thm}
-\pause
-\begin{proof}[Proof by Contradiction]
-\pause
-In fact, if we let $A_m = \{\vec x_i: i\in \mathbb{Z}_+,\ i\geq m\}$, then $\vec x$ is an accumulation point of $A_m$ for all $m$.\\
-\pause
-Moreover, $A_m\subseteq C_m$ so $\vec x$ is an accumulation point of $C_m$ for all $m$.\\
-\pause
-Since $C_m$ is closed, it follows $\vec x\in C_m$, and thus $\vec x\in \bigcap_{i\in I} C_i$.
-\pause
-In particular the intersection is non-empty!
-\end{proof}
-\end{frame}
-
-\begin{frame}{Heine-Borel Theorem}
-\begin{thm}[Heine-Borel Theorem]
-A subset $A\subseteq\mathbb{R}^n$ is compact if and only if it is closed and bounded.
-\end{thm}
-\pause
-\begin{proof}
-\pause
-We already proved compact implies closed and bounded.\\
-\pause
-Assume $A$ is closed and bounded.\\
-\pause
-Take an open cover $\{U_i: i\in I\}$.\\
-\pause
-Then by Lindel\"{o}f's Theorem, we can take a countable subcover.\\
-\pause
-Therefore without loss of generality, assume $I=\mathbb{Z}_+$.\\
-\pause
-Define closed sets $C_1,C_2,C_3,\dots$ by
-\pause
-$$C_m = A\cap \left(\mathbb{R}^n\backslash \bigcup_{i=1}^m U_i\right).$$
-\end{proof}
-\end{frame}
-
-\begin{frame}{Heine-Borel Theorem}
-\begin{thm}[Heine-Borel Theorem]
-A subset $A\subseteq\mathbb{R}^n$ is compact if and only if it is closed and bounded.
-\end{thm}
-\begin{proof}
-\pause
-If $C_m$ is empty for some $m$, then $\{U_1,\dots, U_m\}$ covers $A$.\\
-\pause
-To prove this must happen, we assume otherwise.\\
-\pause
-Notice that $C_{m+1}\subseteq C_m$ for all $i$.\\
-\pause
-Since they are non-empty, closed and bounded, the Cantor Intersection Theorem says $\bigcap_{m=1}^\infty C_m$ is non-empty.\\
-\pause
-Let $\vec x\in \bigcap_{m=1}^\infty C_m$.\\
-\pause
-Since $\vec x\in A\subseteq \bigcup_{i\in I} U_i$, we have that $\vec x\in U_k$ for some $k\in I$, meaning $\vec x\notin C_k$.\\
-\pause
-This is a contradiction.
-\end{proof}
-\end{frame}
 
 \end{document}
 
