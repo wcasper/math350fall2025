@@ -36,11 +36,11 @@ c) all points $$(x,y)$$ such that $$x \geq 0$$
 
 Suppose that $$A,B\subseteq\mathbb R^n$$.  Prove the following:
 
-a) $$\int(A)\cap\int(B) = \int(A\cap B)$$
+a) $$\text{int}(A)\cap\text{int}(B) = \text{int}(A\cap B)$$
 
-b) $$\int(A)\cup\int(B) \subseteq \int(A\cup B)$$
+b) $$\text{int}(A)\cup\\text{int}(B) \subseteq \text{int}(A\cup B)$$
 
-c) Show by example that there exists $$A$$ and $$B$$ with $$\int(A)\cup\int(B) \neq \int(A\cup B)$$
+c) Show by example that there exists $$A$$ and $$B$$ with $$\text{int}(A)\cup\text{int}(B) \neq \text{int}(A\cup B)$$
 
 **Problem 3:** 
 
