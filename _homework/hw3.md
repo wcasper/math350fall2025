@@ -31,16 +31,15 @@ Hint: let
 
 $$U = \{(x,y)\in\mathbb R^2: x^2-y^2 < 1\}$$
 
-and suppose $$(a,b)\in U$$.  If we take the radius
+and suppose $$(a,b)\in U$$.  If $$b=0$$ take $$r=1-|a|$$.  Otherwise, take the radius to be 
 
-$$r=\frac{1+b^2-a^2}{2(\lvert a\rvert + \lvert b\rvert}$$
+$$r=\min\left(\frac{1+b^2-a^2}{2(\lvert a\rvert + \lvert b\rvert},\frac{1}{2}|b|\right).$$
 
-and let $$(x,y)$$ be in the ball of radius $$r$$ around $$(a,b)$$, then 
+and let $$(x,y)$$ be in the ball of radius $$r$$ around $$(a,b)$$.  In the latter case,
 
 $$x^2 < (\lvert a\rvert + r)^2\ \ \text{and}\ \ y^2 > (\lvert b\rvert - r)^2.$$
 
 Use this to prove that the ball is contained in $$U$$.
-
 
 
 b) all points $$(x,y)$$ such that $$x > 0$$
