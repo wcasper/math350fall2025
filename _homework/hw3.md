@@ -31,7 +31,17 @@ Hint: let
 
 $$U = \{(x,y)\in\mathbb R^2: x^2-y^2 < 1\}$$
 
-and show that if $$(a,b)\in U$$, then the ball of radius $$r=\sqrt{1+b^2}-\lvert a\rvert$$ is a subset of $$U$$ also.
+and suppose $$(a,b)\in U$$.  If we take the radius
+
+$$r=\frac{1+b^2-a^2}{2(\lvert a\rvert + \lvert b\rvert}$$
+
+and let $$(x,y)$$ be in the ball of radius $$r$$ around $$(a,b)$$, then 
+
+$$x^2 < (\lvert a\rvert + r)^2\ \ \text{and}\ \ y^2 > (\lvert b\rvert - r)^2.$$
+
+Use this to prove that the ball is contained in $$U$$.
+
+
 
 b) all points $$(x,y)$$ such that $$x > 0$$
 
