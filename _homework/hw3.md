@@ -25,7 +25,13 @@ You will be graded based on *completion* of all of the assigned problems, along 
 
 Decide, with proof, whether each of the following subsets of $$\mathbb R^2$$ are open, closed or neither.
 
-a) all points $$(x,y)$$ such that $$x^2 - y^2  < 1$$
+a) all points $$(x,y)$$ such that $$x^2 - y^2  < 1$$  
+
+Hint: let 
+
+$$U = \{(x,y)\in\mathbb R^2: x^2-y^2 < 1\}$$
+
+and show that if $$(a,b)\in U$$, then the ball of radius $$r=\sqrt{1+b^2}-\lvert a\rvert$$ is a subset of $$U$$ also.
 
 b) all points $$(x,y)$$ such that $$x > 0$$
 
