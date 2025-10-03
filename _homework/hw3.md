@@ -33,7 +33,7 @@ $$U = \{(x,y)\in\mathbb R^2: x^2-y^2 < 1\}$$
 
 and suppose $$(a,b)\in U$$.  If $$b=0$$ take $$r=1-\lvert a\rvert$$.  Otherwise, take the radius to be 
 
-$$r=\min\left(\frac{1+b^2-a^2}{2(\lvert a\rvert + \lvert b\rvert},\frac{1}{2}\lvert b\rvert\right).$$
+$$r=\min\left(\frac{1+b^2-a^2}{2(\lvert a\rvert + \lvert b)\rvert},\frac{1}{2}\lvert b\rvert\right).$$
 
 and let $$(x,y)$$ be in the ball of radius $$r$$ around $$(a,b)$$.  In the latter case,
 
