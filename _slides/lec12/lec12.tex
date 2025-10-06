@@ -192,9 +192,9 @@ The sequence $\{x_n\}$ defined by $x_n = 1/n$ does not converge.\\
 \pause
 Suppose that it converges to a number $L$.\\
 \pause
-Then for all $\epsilon > 0$, there must exists an $N\in\mathbb{Z}_+$ such that $d(x_n,L) < \epsilon$ for all $N\geq n$.\\
+Then for all $\epsilon > 0$, there must exists an $N\in\mathbb{Z}_+$ such that $d(x_n,L) < \epsilon$ for all $n\geq N$.\\
 \pause
-Take $\epsilon = 1$ and choose $N\in\mathbb{Z}_+$ such that $d(x_n,L) < 1$ for all $N\geq n$.\\
+Take $\epsilon = 1$ and choose $N\in\mathbb{Z}_+$ such that $d(x_n,L) < 1$ for all $n\geq N$.\\
 \pause
 With the discrete metric $d(x_n,L) < 1$ implies $x_n = L$.\\
 \pause
@@ -207,22 +207,22 @@ This means $x_n=1/n = L$ for all $n\geq N$, which is a contradiction!
 \pause
 Let $(M,d)$ be a metric space.\\
 \pause
-If a sequence $\{x_n\}$ in $M$ converges to $L$ and converges to $M$, then $L=M$.
+If a sequence $\{x_n\}$ in $M$ converges to $L$ and converges to $T$, then $L=M$.
 \end{thm}
 \pause
 \begin{proof}
 \pause
-Suppose that $\{x_n\}$ converges to $L$ and $M$.\\
+Suppose that $\{x_n\}$ converges to $L$ and $T$.\\
 \pause
-Assume further that $L-M\neq 0$ and let $\epsilon = d(L,M)/2$.\\
+Assume further that $L-T\neq 0$ and let $\epsilon = d(L,T)/2$.\\
 \pause
-Then there exists $N_1$ such that $d(x_n,L) < \epsilon$ for $n > N_1$.\\
+Then there exists $N_1$ such that $d(x_n,L) < \epsilon$ for $n \geq N_1$.\\
 \pause
-Likewise, there exists $N_2$ such that $d(x_n,M) < \epsilon$ for $n > N_2$.\\
+Likewise, there exists $N_2$ such that $d(x_n,T) < \epsilon$ for $n \geq N_2$.\\
 \pause
 Then for $n>\max\{N_1,N_2\}$,  the triangle inequality says
 \pause
-$$d(L,M) \leq d(L,x_n) + d(x_n,M) < 2\epsilon = d(L,M).$$
+$$d(L,T) \leq d(L,x_n) + d(x_n,T) < 2\epsilon = d(L,T).$$
 \pause
 This is a contradiction.
 \end{proof}
