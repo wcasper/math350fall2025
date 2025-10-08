@@ -207,14 +207,14 @@ This means $x_n=1/n = L$ for all $n\geq N$, which is a contradiction!
 \pause
 Let $(M,d)$ be a metric space.\\
 \pause
-If a sequence $\{x_n\}$ in $M$ converges to $L$ and converges to $T$, then $L=M$.
+If a sequence $\{x_n\}$ in $M$ converges to $L$ and converges to $T$, then $L=T$.
 \end{thm}
 \pause
 \begin{proof}
 \pause
 Suppose that $\{x_n\}$ converges to $L$ and $T$.\\
 \pause
-Assume further that $L-T\neq 0$ and let $\epsilon = d(L,T)/2$.\\
+Assume further that $L\neq T$ and let $\epsilon = d(L,T)/2$.\\
 \pause
 Then there exists $N_1$ such that $d(x_n,L) < \epsilon$ for $n \geq N_1$.\\
 \pause
@@ -284,124 +284,6 @@ Since $\epsilon > 0$ was arbitrary, this proves convergence.
 \end{proof}
 \end{frame}
 
-\begin{frame}{Existence of limits}
-Recall a \textbf{subsequence} of a sequence $\{x_n\}$ is a sequence of the form $\{x_{k(n)}\}$, for $k(1) < k(2) < \dots$ positive integers.
-\pause
-\begin{thm}
-A sequence $\{x_n\}$ in a metric space $(M,d)$ converges to a value $L\in M$ if and only if every subsequence $\{x_{k(n)}\}$ also converges to $L$.
-\end{thm}
-\end{frame}
-
-\begin{frame}{Existence of limits}
-\begin{proof}
-Suppose that every subsequence $\{x_{k(n)}\}$ of $\{x_n\}$ converges to $L$.\\
-\pause
-A sequence is a subsequence of itself!  Thus $\{x_n\}$ will converge to $L$.\\
-\pause
-Conversely, suppose that $\{x_n\}$ converges to $L$.\\
-\pause
-Let $\{x_{k(n)}\}$ be a subsequence of $\{x_n\}$.\\
-\pause
-To show it limits to $L$, let $\epsilon > 0$.\\
-\pause
-Then there exists $N\in\mathbb{Z}_+$ such that $n\geq N$ implies $d(x_n,L)<\epsilon$.\\
-\pause
-Moreover, $k(n)\geq n$ so $k(n)\geq N$ and therefore $d(x_{k(n)}, L) < \epsilon$.\\
-\pause
-Since $\epsilon > 0$ was arbitrary, this proves convergence.
-\end{proof}
-\end{frame}
-
-\begin{frame}{Monotone sequences}
-\begin{defn}
-\pause
-A sequence $\{x_n\}$ of real numbers is called \textbf{increasing} or \textbf{monotone increasing} if $x_n\leq x_{n+1}$ for all $n$.\\
-\pause
-It is called \textbf{strictly increasing} if $x_n < x_{n+1}$ for all $n$.\\
-\pause
-A sequence $\{x_n\}$ of real numbers is called \textbf{decreasing} or \textbf{monotone decreasing} if $x_n\geq x_{n+1}$ for all $n$.\\
-\pause
-It is called \textbf{strictly decreasing} if $x_n > x_{n+1}$ for all $n$.\\
-\pause
-In any of these cases, we call the sequence \textbf{monotone}.
-\end{defn}
-\end{frame}
-
-\begin{frame}{Monotone sequences}
-Bounded monotone sequences always converge (with Euclidean metric)!
-\pause
-\begin{thm}[Monotone convergence theorem]
-\pause
-Consider the metric space formed by $\mathbb{R}$ with Euclidean distance.\\
-\pause
-A monotone increasing sequence $\{x_n\}$ of real numbers which is bounded above converges to $L = \sup\{x_1,x_2,\dots\}$.\\
-\pause
-A monotone decreasing sequence $\{x_n\}$ which is bounded below converges to $L = \inf\{x_1,x_2,\dots\}$.
-\end{thm}
-\end{frame}
-
-\begin{frame}{Monotone sequences}
-\begin{proof}
-\pause
-Suppose that $\{x_n\}$ is a monotone increasing sequence which is bounded above and let $X = \{x_1,x_2,\dots\}$.
-\pause
-Then by the Completeness Axiom $L=\sup X$ exists.\\
-\pause
-Let $\epsilon > 0$.\\
-\pause
-Then $L-\epsilon$ is not a supremum of $X$, so there exists $x_N\in X$ such that $x_N > L-\epsilon$.\\
-\pause
-Since the sequence is increasing, for any $n >N$, we have that $L-\epsilon < x_N \leq x_n < L$.\\
-\pause
-It follows that
-$$d(x_n,L) = |x_n-L| = L-x_n < \epsilon.$$
-\pause
-Since $\epsilon > 0$ was arbitrary, this proves $x_n$ converges to $L$.
-\end{proof}
-\end{frame}
-
-\subsection{Cauchy sequences}
-
-\begin{frame}{Cauchy sequence}
-A sequence $\{x_n\}$ in a metric space $(M,d)$ is called Cauchy if the terms get arbitrarily close together as $n$ gets arbitrarily large.\\
-\pause
-More formally:
-\pause
-\begin{defn}
-A sequence $\{x_n\}$ is called a \textbf{Cauchy sequence} if
-$$\forall \epsilon > 0,\ \text{there exists $N\in\mathbb Z_{+}$ with}\ m,n\geq N\ \Rightarrow\ d(x_m,x_n) < \epsilon.$$
-\end{defn}
-\begin{itemize}
-\pause
-\item every convergent sequence is Cauchy
-\pause
-\item is every Cauchy sequence convergent?
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Challenge!}
-\begin{prob}
-Prove that if $\{x_n\}$ is a Cauchy sequence in a metric space $(M,d)$, then it is bounded.
-\end{prob}
-\pause
-\begin{soln}
-\pause
-Suppose $\{x_n\}$ is Cauchy.\\
-\pause
-Let $\epsilon = 2024$.\\
-\pause
-Then $\exists\ N\in\mathbb{Z}_+$ with $d(x_m,x_n) < 2024$ for all $m,n\geq N$.\\
-\pause
-Therefore for all $n\geq N$, we have $d(x_n,x_N)\leq 2024$.\\
-\pause
-So if we define
-$$R = \max\{d(x_1,x_N), d(x_2,x_N),\dots, d(x_{n-1},x_N),2024\},$$
-\pause
-then $d(x_n,x_N)\leq 2024$ for all $n\geq 1$.\\
-\pause
-Hence $X = \{x_1,x_2,\dots\}\subseteq B_M(x_N,R)$, and is bounded.
-\end{soln}
-\end{frame}
 
 \end{document}
 

@@ -1,4 +1,3 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Real Analysis Lecture 12}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Limits of sequences}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Cauchy sequences}{96}{0}{1}
