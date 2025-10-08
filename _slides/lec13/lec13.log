@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  8 OCT 2025 02:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  8 OCT 2025 12:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1522,7 +1522,7 @@ Package rerunfilecheck Info: File `lec13.out' has not changed.
 Here is how much of TeX's memory you used:
  18539 strings out of 494847
  343015 string characters out of 6179079
- 423623 words of memory out of 5000000
+ 423624 words of memory out of 5000000
  21187 multiletter control sequences out of 15000+600000
  38361 words of font info for 60 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -1537,7 +1537,7 @@ amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uh
 vb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on lec13.pdf (110 pages, 415066 bytes).
+Output written on lec13.pdf (110 pages, 414980 bytes).
 PDF statistics:
  3391 PDF objects out of 3580 (max. 8388607)
  3218 compressed objects within 33 object streams

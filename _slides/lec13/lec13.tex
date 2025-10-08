@@ -228,16 +228,16 @@ Prove that if $\{x_n\}$ is a Cauchy sequence in a metric space $(M,d)$, then it 
 \pause
 Suppose $\{x_n\}$ is Cauchy.\\
 \pause
-Let $\epsilon = 2024$.\\
+Let $\epsilon = 2025$.\\
 \pause
-Then $\exists\ N\in\mathbb{Z}_+$ with $d(x_m,x_n) < 2024$ for all $m,n\geq N$.\\
+Then $\exists\ N\in\mathbb{Z}_+$ with $d(x_m,x_n) < 2025$ for all $m,n\geq N$.\\
 \pause
-Therefore for all $n\geq N$, we have $d(x_n,x_N)\leq 2024$.\\
+Therefore for all $n\geq N$, we have $d(x_n,x_N)\leq 2025$.\\
 \pause
 So if we define
-$$R = \max\{d(x_1,x_N), d(x_2,x_N),\dots, d(x_{n-1},x_N),2024\},$$
+$$R = \max\{d(x_1,x_N)+1, d(x_2,x_N)+1,\dots, d(x_{n-1},x_N)+1,2025\},$$
 \pause
-then $d(x_n,x_N)\leq 2024$ for all $n\geq 1$.\\
+then $d(x_n,x_N)\leq 2025$ for all $n\geq 1$.\\
 \pause
 Hence $X = \{x_1,x_2,\dots\}\subseteq B_M(x_N,R)$, and is bounded.
 \end{soln}
