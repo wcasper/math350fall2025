@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  29 SEP 2025 10:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  30 SEP 2025 22:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1479,66 +1479,6 @@ Package pdftex.def Info: fig/ballp.png  used on input line 318.
 
 ] [70
 
-] [71
-
-]
-[72
-
-] [73
-
-] [74
-
-] [75
-
-] [76
-
-] [77
-
-] [78
-
-] [79
-
-] [80
-
-] [81
-
-] [82
-
-] [83
-
-] [84
-
-] [85
-
-] [86
-
-]
-[87
-
-] [88
-
-] [89
-
-] [90
-
-] [91
-
-] [92
-
-] [93
-
-] [94
-
-] [95
-
-] [96
-
-] [97
-
-] [98
-
-] [99
-
 ]
 \tf@nav=\write6
 \openout6 = `lec10.nav'.
@@ -1549,19 +1489,20 @@ Package pdftex.def Info: fig/ballp.png  used on input line 318.
 \tf@snm=\write8
 \openout8 = `lec10.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 450.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 450.
- (./lec10.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 450.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 450.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 340.
+
+(./lec10.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
 Package rerunfilecheck Info: File `lec10.out' has not changed.
 (rerunfilecheck)             Checksum: 64EAF909404F1504005B253526C67404;182.
  ) 
 Here is how much of TeX's memory you used:
- 18580 strings out of 494847
- 343808 string characters out of 6179079
- 429624 words of memory out of 5000000
- 21241 multiletter control sequences out of 15000+600000
+ 18506 strings out of 494847
+ 343129 string characters out of 6179079
+ 424624 words of memory out of 5000000
+ 21225 multiletter control sequences out of 15000+600000
  48666 words of font info for 76 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  56i,19n,65p,800b,902s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1575,10 +1516,10 @@ public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
 hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on lec10.pdf (99 pages, 414463 bytes).
+Output written on lec10.pdf (70 pages, 329754 bytes).
 PDF statistics:
- 3068 PDF objects out of 3580 (max. 8388607)
- 2901 compressed objects within 30 object streams
- 202 named destinations out of 1000 (max. 500000)
+ 2200 PDF objects out of 2487 (max. 8388607)
+ 2071 compressed objects within 21 object streams
+ 144 named destinations out of 1000 (max. 500000)
  147 words of extra memory for PDF output out of 10000 (max. 10000000)
 
