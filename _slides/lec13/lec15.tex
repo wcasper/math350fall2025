@@ -120,85 +120,7 @@
 % - Talk about 30s to 2min per frame. So there should be between about
 %   15 and 30 frames, all told.
 
-\section{Real Analysis Lecture 13}
-
-\subsection{Subsequences}
-
-\begin{frame}{Existence of limits}
-Recall a \textbf{subsequence} of a sequence $\{x_n\}$ is a sequence of the form $\{x_{k(n)}\}$, for $k(1) < k(2) < \dots$ positive integers.
-\pause
-\begin{thm}
-A sequence $\{x_n\}$ in a metric space $(M,d)$ converges to a value $L\in M$ if and only if every subsequence $\{x_{k(n)}\}$ also converges to $L$.
-\end{thm}
-\end{frame}
-
-\begin{frame}{Existence of limits}
-\begin{proof}
-Suppose that every subsequence $\{x_{k(n)}\}$ of $\{x_n\}$ converges to $L$.\\
-\pause
-A sequence is a subsequence of itself!  Thus $\{x_n\}$ will converge to $L$.\\
-\pause
-Conversely, suppose that $\{x_n\}$ converges to $L$.\\
-\pause
-Let $\{x_{k(n)}\}$ be a subsequence of $\{x_n\}$.\\
-\pause
-To show it limits to $L$, let $\epsilon > 0$.\\
-\pause
-Then there exists $N\in\mathbb{Z}_+$ such that $n\geq N$ implies $d(x_n,L)<\epsilon$.\\
-\pause
-Moreover, $k(n)\geq n$ so $k(n)\geq N$ and therefore $d(x_{k(n)}, L) < \epsilon$.\\
-\pause
-Since $\epsilon > 0$ was arbitrary, this proves convergence.
-\end{proof}
-\end{frame}
-
-\begin{frame}{Monotone sequences}
-\begin{defn}
-\pause
-A sequence $\{x_n\}$ of real numbers is called \textbf{increasing} or \textbf{monotone increasing} if $x_n\leq x_{n+1}$ for all $n$.\\
-\pause
-It is called \textbf{strictly increasing} if $x_n < x_{n+1}$ for all $n$.\\
-\pause
-A sequence $\{x_n\}$ of real numbers is called \textbf{decreasing} or \textbf{monotone decreasing} if $x_n\geq x_{n+1}$ for all $n$.\\
-\pause
-It is called \textbf{strictly decreasing} if $x_n > x_{n+1}$ for all $n$.\\
-\pause
-In any of these cases, we call the sequence \textbf{monotone}.
-\end{defn}
-\end{frame}
-
-\begin{frame}{Monotone sequences}
-Bounded monotone sequences always converge (with Euclidean metric)!
-\pause
-\begin{thm}[Monotone convergence theorem]
-\pause
-Consider the metric space formed by $\mathbb{R}$ with Euclidean distance.\\
-\pause
-A monotone increasing sequence $\{x_n\}$ of real numbers which is bounded above converges to $L = \sup\{x_1,x_2,\dots\}$.\\
-\pause
-A monotone decreasing sequence $\{x_n\}$ which is bounded below converges to $L = \inf\{x_1,x_2,\dots\}$.
-\end{thm}
-\end{frame}
-
-\begin{frame}{Monotone sequences}
-\begin{proof}
-\pause
-Suppose that $\{x_n\}$ is a monotone increasing sequence which is bounded above and let $X = \{x_1,x_2,\dots\}$.
-\pause
-Then by the Completeness Axiom $L=\sup X$ exists.\\
-\pause
-Let $\epsilon > 0$.\\
-\pause
-Then $L-\epsilon$ is not a supremum of $X$, so there exists $x_N\in X$ such that $x_N > L-\epsilon$.\\
-\pause
-Since the sequence is increasing, for any $n >N$, we have that $L-\epsilon < x_N \leq x_n < L$.\\
-\pause
-It follows that
-$$d(x_n,L) = |x_n-L| = L-x_n < \epsilon.$$
-\pause
-Since $\epsilon > 0$ was arbitrary, this proves $x_n$ converges to $L$.
-\end{proof}
-\end{frame}
+\section{Real Analysis Lecture 15}
 
 \subsection{Cauchy sequences}
 
@@ -228,16 +150,16 @@ Prove that if $\{x_n\}$ is a Cauchy sequence in a metric space $(M,d)$, then it 
 \pause
 Suppose $\{x_n\}$ is Cauchy.\\
 \pause
-Let $\epsilon = 2025$.\\
+Let $\epsilon = 2024$.\\
 \pause
-Then $\exists\ N\in\mathbb{Z}_+$ with $d(x_m,x_n) < 2025$ for all $m,n\geq N$.\\
+Then $\exists\ N\in\mathbb{Z}_+$ with $d(x_m,x_n) < 2024$ for all $m,n\geq N$.\\
 \pause
-Therefore for all $n\geq N$, we have $d(x_n,x_N)\leq 2025$.\\
+Therefore for all $n\geq N$, we have $d(x_n,x_N)\leq 2024$.\\
 \pause
 So if we define
-$$R = \max\{d(x_1,x_N)+1, d(x_2,x_N)+1,\dots, d(x_{n-1},x_N)+1,2025\},$$
+$$R = \max\{d(x_1,x_N), d(x_2,x_N),\dots, d(x_{n-1},x_N),2024\},$$
 \pause
-then $d(x_n,x_N)\leq 2025$ for all $n\geq 1$.\\
+then $d(x_n,x_N)\leq 2024$ for all $n\geq 1$.\\
 \pause
 Hence $X = \{x_1,x_2,\dots\}\subseteq B_M(x_N,R)$, and is bounded.
 \end{soln}
@@ -342,6 +264,129 @@ $$x_1 = 1,\quad x_2 = \frac{3}{2},\quad x_3 = \frac{17}{12},\dots$$
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Complete spaces}
+\begin{defn}
+A metric space $(M,d)$ is called \textbf{complete} if every Cauchy sequence in $M$ converges.\\
+\pause
+A subset $S\subseteq M$ is called \textbf{complete} if the subspace $(S,d)$ is a complete metric space.
+\end{defn}
+\begin{itemize}
+\pause
+\item $\mathbb R^n$ with the Euclidean metric is complete
+\pause
+\item $[0,1]$ with the Euclidean metric is complete
+\pause
+\item $(0,1)$ with the Euclidean metric is not complete
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Challenge!}
+\begin{prob}
+Show that the interval $(0,1)\subseteq\mathbb{R}$ with the Euclidean metric is not a complete metric space.
+\end{prob}
+\end{frame}
+
+
+\begin{frame}{Complete spaces}
+\begin{thm}
+Let $(M,d)$ be a metric space.
+\pause
+Then for any compact subset $S\subseteq M$, the subspace $(S,d)$ is complete.
+\end{thm}
+\pause
+\begin{proof}
+\pause
+Let $(M,d)$ be a metric space and $S\subseteq M$ compact.\\
+\pause
+To show that $(S,d)$ is complete, we must show that every Cauchy sequence in $S$ converges to a value in $S$.\\
+\pause
+Suppose that $\{x_n\}$ is a Cauchy sequence in $(S,d)$.\\
+\pause
+If the set $X$ of all values of $\{x_n\}$ is finite, then the Cauchy condition implies $\{x_n\}$ converges.\\
+\pause
+Assume instead $X$ is infinite.\\
+\pause
+TIME OUT!
+\end{proof}
+\end{frame}
+
+\begin{frame}{Complete spaces}
+\begin{lem}
+Let $(M,d)$ be a metric space and let $S\subseteq M$ be compact.
+\pause
+Then for any infinite subset $X\subseteq S$, the set $S$ has an accumulation point of $X$.
+\end{lem}
+\pause
+\begin{proof}
+\pause
+To see this, suppose otherwise.\\
+\pause
+Then for all $x\in S$, there exists $r_x > 0$ such that $B_S(x,r_x)\cap X$ is empty if $x\notin X$ or equal to $\{x\}$ if $x\in X$.\\
+\pause
+The open cover $\{U_i: i\in I\}$ with $I=S$ and $U_i = B_S(i; r_i)$ of $S$ has no finite subcover.\\
+\pause
+This is a contradiction, so $S$ has an accumulation point of $X$.
+\end{proof}
+\end{frame}
+
+\begin{frame}{Complete spaces}
+\begin{thm}
+Let $(M,d)$ be a metric space.
+Then for any compact subset $S\subseteq M$, the subspace $(S,d)$ is complete.
+\end{thm}
+\begin{proof}
+\pause
+Let $L$ be an accumulation point of $X$ in $S$.\\
+\pause
+Let $\epsilon > 0$.\\
+\pause
+Then $\exists N>0$ such that $m,n \geq N$ implies $d(x_m,x_n) < \epsilon/2$.\\
+\pause
+Moreover, $B_S(L,\epsilon/2)$ contains infinitely many points of $X$.\\
+\pause
+Hence it contains $x_m$ for some $m\geq N$.\\
+\pause
+It follows that for all $n\geq N$,
+$$d(x_n,L)\leq d(x_n,x_m) + d(x_m,L) < \epsilon/2 + \epsilon/2 = \epsilon.$$
+\pause
+Since $\epsilon > 0$ was arbitrary, this proves $\{x_n\}$ converges to $L$.
+\end{proof}
+\end{frame}
+
+
+
+\subsection{Limit of a function}
+
+\begin{frame}{Limit of a function}
+Let $(S,d_S)$ and $(T,d_T)$ be metric spaces and $A\subseteq S$.
+\pause
+Also, let $f: A\rightarrow T$ be a function.
+\pause
+\begin{defn}
+\pause
+Then for any accumulation point $p$ of $A$ and element $L\in T$, we say that the \textbf{limit as $x$ approaches $p$ of $f(x)$ is $L$}
+\pause
+ and write
+$$\lim_{x\rightarrow p} f(x) = L$$
+\pause
+if for all $\epsilon > 0$ there exists $\delta > 0$ such that
+$$0 < d_S(x,p) < \delta\ \Rightarrow\ d_T(f(x),L) < \epsilon.$$
+\end{defn}
+\end{frame}
+
+\begin{frame}{Limit of a function}
+\begin{thm}
+\pause
+Let $(S,d_S)$ and $(T,d_T)$ be metric spaces, $A\subseteq S$, and $f: A\rightarrow T$ be a function.
+\pause
+Then
+$$\lim_{x\rightarrow a} f(x) = L$$
+\pause
+if and only if
+$$\lim_{n\rightarrow \infty} f(x_n) = L$$
+for all sequences $\{x_n\}$ of values in $A\backslash \{a\}$ which converge to $a$.
+\end{thm}
+\end{frame}
 
 \end{document}
 

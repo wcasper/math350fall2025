@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  8 OCT 2025 12:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  13 OCT 2025 02:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1408,99 +1408,6 @@ Overfull \vbox (2.95773pt too high) detected at line 244
 
 ] [80
 
-] [81
-
-] [82
-
-] [83
-
-] [84
-
-] [85
-
-] [86
-
-] [87
-
-] [88
-
-] [89
-
-] [90
-
-] [91
-
-]
-[92
-
-] [93
-
-] [94
-
-] [95
-
-] [96
-
-] [97
-
-] [98
-
-] [99
-
-] [100
-
-] [101
-
-] [102
-
-]
-Overfull \vbox (2.79893pt too high) detected at line 432
- []
-
-[103
-
-]
-Overfull \vbox (2.79893pt too high) detected at line 432
- []
-
-[104
-
-]
-Overfull \vbox (2.79893pt too high) detected at line 432
- []
-
-[105
-
-]
-Overfull \vbox (2.79893pt too high) detected at line 432
- []
-
-[106
-
-]
-Overfull \vbox (2.79893pt too high) detected at line 432
- []
-
-[107
-
-]
-Overfull \vbox (2.79893pt too high) detected at line 432
- []
-
-[108
-
-]
-Overfull \vbox (2.79893pt too high) detected at line 432
- []
-
-[109
-
-]
-Overfull \vbox (2.79893pt too high) detected at line 432
- []
-
-[110
-
 ]
 \tf@nav=\write6
 \openout6 = `lec13.nav'.
@@ -1511,19 +1418,19 @@ Overfull \vbox (2.79893pt too high) detected at line 432
 \tf@snm=\write8
 \openout8 = `lec13.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 437.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 437.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 346.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 346.
  (./lec13.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 437.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 437.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 346.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 346.
 Package rerunfilecheck Info: File `lec13.out' has not changed.
-(rerunfilecheck)             Checksum: 8BC9FE9838FE0CDD3054B278605F74E9;186.
+(rerunfilecheck)             Checksum: 6937A6A193778B7B5F7292ACF86213BD;186.
  ) 
 Here is how much of TeX's memory you used:
- 18539 strings out of 494847
- 343015 string characters out of 6179079
- 423624 words of memory out of 5000000
- 21187 multiletter control sequences out of 15000+600000
+ 18469 strings out of 494847
+ 342343 string characters out of 6179079
+ 423623 words of memory out of 5000000
+ 21177 multiletter control sequences out of 15000+600000
  38361 words of font info for 60 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  56i,19n,65p,800b,743s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1537,10 +1444,10 @@ amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uh
 vb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on lec13.pdf (110 pages, 414980 bytes).
+Output written on lec13.pdf (80 pages, 318591 bytes).
 PDF statistics:
- 3391 PDF objects out of 3580 (max. 8388607)
- 3218 compressed objects within 33 object streams
- 224 named destinations out of 1000 (max. 500000)
+ 2492 PDF objects out of 2984 (max. 8388607)
+ 2358 compressed objects within 24 object streams
+ 164 named destinations out of 1000 (max. 500000)
  127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
