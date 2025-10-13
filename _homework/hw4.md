@@ -32,6 +32,8 @@ c) $$\lim_{x\rightarrow 2} x^2 = 4.$$
 
 d) $$\lim_{x\rightarrow 1} \frac{\sqrt{x^2+3}-2}{x-1} = \frac{1}{2}.$$
 
+Hint: multiply by the conjugate!
+
 **Problem 2:**
 
 Let $$(M,d)$$ be a metric space and suppose $$A\subseteq M$$ is closed and $$K\subseteq M$$ is compact.
