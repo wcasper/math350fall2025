@@ -56,12 +56,15 @@ c) $$\lim_{(x,y)\rightarrow (0,0)} f(x,y)$$
 
 **Problem 4:**
 
-Prove that if $$\{x_n\}$$ is a Cauchy sequence and the set
+Let $$(M,d)$$ be a metrix space.
+
+a) Prove that if $$\{x_n\}$$ is a Cauchy sequence in $$M$$ and the set
 
 $$X = \{x_1,x_2,x_3,\dots\}$$
 
 is finite, then $$x_n$$ converges.
 
+b) If $$d$$ is the discrete metric, prove that every Cauchy sequence converges.
 
 
 
