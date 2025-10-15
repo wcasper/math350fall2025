@@ -1,0 +1,354 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This file is a template using the "beamer" package to create slides for a talk or presentation
+% - Giving a talk on some subject.
+% - The talk is between 15min and 45min long.
+% - Style is ornate.
+
+% MODIFIED by Jonathan Kew, 2008-07-06
+% The header comments and encoding in this file were modified for inclusion with TeXworks.
+% The content is otherwise unchanged from the original distributed with the beamer package.
+
+\documentclass{beamer}
+\setbeamercovered{invisible}
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[utf8]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%%% MATH RELATED
+
+\input{macros.tex}
+
+\title{MATH 350-2 Advanced Calculus} 
+\subtitle
+{} % (optional)
+
+\author[W.R. Casper] % (optional, use only with lots of authors)
+{W.R. Casper}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[California State University Fullerton] % (optional, but mostly needed)
+{
+  Department of Mathematics\\
+  California State University Fullerton}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:  
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+\section{Real Analysis Lecture 15}
+
+
+\subsection{Limit of a function}
+
+\begin{frame}{Limit of a function}
+Let $(S,d_S)$ and $(T,d_T)$ be metric spaces and $A\subseteq S$.
+\pause
+Also, let $f: A\rightarrow T$ be a function.
+\pause
+\begin{defn}
+\pause
+Then for any accumulation point $p$ of $A$ and element $L\in T$, we say that the \textbf{limit as $x$ approaches $p$ of $f(x)$ is $L$}
+\pause
+ and write
+$$\lim_{x\rightarrow p} f(x) = L$$
+\pause
+if for all $\epsilon > 0$ there exists $\delta > 0$ such that
+$$0 < d_S(x,p) < \delta\ \Rightarrow\ d_T(f(x),L) < \epsilon.$$
+\end{defn}
+\end{frame}
+
+\begin{frame}{Example}
+Prove that
+$$\lim_{x\rightarrow 3}\frac{1}{x^2} = \frac{1}{9}$$
+\end{frame}
+
+\begin{frame}{Example}
+Prove that
+$$\lim_{x\rightarrow 4}\frac{\sqrt{x}-2}{x-4} = \frac{1}{4}$$
+\end{frame}
+
+\begin{frame}{Limit of a function}
+\begin{thm}
+\pause
+Let $(S,d_S)$ and $(T,d_T)$ be metric spaces, $A\subseteq S$, and $f: A\rightarrow T$ be a function.
+\pause
+Then
+$$\lim_{x\rightarrow a} f(x) = L$$
+\pause
+if and only if
+$$\lim_{n\rightarrow \infty} f(x_n) = L$$
+for all sequences $\{x_n\}$ of values in $A\backslash \{a\}$ which converge to $a$.
+\end{thm}
+\end{frame}
+
+\begin{frame}{Challenge!}
+Consider the function
+$$f: \mathbb{R}^2\rightarrow \mathbb R$$
+between metric spaces with the Euclidean metric defined by
+$$f(x,y) = \frac{x^2y}{x^4+y^2}.$$
+\pause
+\begin{quest}
+\pause
+What is the limit as $(x,y)\rightarrow (0,0)$?
+\end{quest}
+\end{frame}
+
+\begin{frame}{Challenge!}
+Consider the sequence $\{(x_n,y_n)\}$ defined by
+$$(x_n,y_n) = (1/n,0).$$
+\pause
+Then
+$$\lim_{n\rightarrow \infty} (x_n,y_n) = \lim_{n\rightarrow \infty} (1/n,0) = (0,0)$$
+\pause
+and
+$$\lim_{n\rightarrow \infty} f(x_n,y_n) = \lim_{n\rightarrow \infty} 0 = 0.$$
+\end{frame}
+
+\begin{frame}{Challenge!}
+Consider the sequence $\{(x_n,y_n)\}$ defined by
+$$(x_n,y_n) = (0,1/n).$$
+\pause
+Then
+$$\lim_{n\rightarrow \infty} (x_n,y_n) = \lim_{n\rightarrow \infty} (0,1/n) = (0,0)$$
+\pause
+and
+$$\lim_{n\rightarrow \infty} f(x_n,y_n) = \lim_{n\rightarrow \infty} 0 = 0.$$
+\end{frame}
+
+\begin{frame}{Challenge!}
+Consider the sequence $\{(x_n,y_n)\}$ defined by
+$$(x_n,y_n) = (1/n,1/n).$$
+\pause
+Then
+$$\lim_{n\rightarrow \infty} (x_n,y_n) = \lim_{n\rightarrow \infty} (1/n,1/n) = (0,0)$$
+\pause
+and
+$$\lim_{n\rightarrow \infty} f(x_n,y_n) = \lim_{n\rightarrow \infty} \frac{1/n^3}{1/n^4+1/n^2} = \lim_{n\rightarrow \infty} \frac{1/n}{1/n^2+1} = 0.$$
+\end{frame}
+
+\begin{frame}{Challenge!}
+Consider the sequence $\{(x_n,y_n)\}$ defined by
+$$(x_n,y_n) = (1/n,1/n^2).$$
+\pause
+Then
+$$\lim_{n\rightarrow \infty} (x_n,y_n) = \lim_{n\rightarrow \infty} (1/n,1/n^2) = (0,0)$$
+\pause
+and
+$$\lim_{n\rightarrow \infty} f(x_n,y_n) = \lim_{n\rightarrow \infty} \frac{1/n^4}{1/n^4+1/n^4} = \lim_{n\rightarrow \infty} \frac{1}{2} = \frac{1}{2}.$$
+\pause
+{\color{red}The limit DOES NOT EXIST!}
+\end{frame}
+
+
+\begin{frame}{Limit of a function}
+\begin{proof}
+$(\Rightarrow)$\quad
+Suppose that $\lim_{x\rightarrow a} f(x) =L$ and let $\{x_n\}$ be a sequence of values in $A\backslash\{a\}$ which converges to $a$.\\
+\pause
+Let $\epsilon > 0$.\\
+\pause
+Then there exists $\delta > 0$ such that $0 < d_S(x,a) < \delta$ implies $d_T(f(x),L) < \epsilon$.\\
+\pause
+Also, there exists $N \in\mathbb{Z}_+$ such that $n\geq N$ implies $d_S(x_n,a) < \delta$ for all $n\geq N$.\\
+\pause
+Therefore since $x_n\neq a$ for all $n$, we have that
+$$n\geq N\ \Rightarrow\ 0 < d_S(x_n,a) < \delta\ \Rightarrow\ d_T(f(x_n), L) < \epsilon.$$
+\pause
+Hence for all $n\geq N$, we know $d_T(f(x_n), L) < \epsilon$.\\
+\pause
+Since $\epsilon > 0$ was arbitrary, this proves $\lim_{n\rightarrow \infty} f(x_n) = L$.
+\end{proof}
+\end{frame}
+
+\begin{frame}{Limit of a function}
+\begin{proof}
+$(\Leftarrow)$\quad
+Suppose that for every sequence $\{x_n\}$ of values in $A\backslash\{a\}$ which converges to $a$, we have $\lim_{n\rightarrow \infty} f(x_n) = L$.
+\pause
+We must show that $\lim_{x\rightarrow a} f(x) = L$.\\
+\pause
+To see this, we assume otherwise.\\
+\pause
+Then there exists $\epsilon > 0$ such that for all $\delta > 0$ there exists $x$ with $0 < d_S(x,a) < \delta$ and $d_T(f(x),L) \geq \epsilon$.\\
+\pause
+For each $n\in \mathbb{Z}_+$, take $x_n\in A$ with $0 < d_S(x_n,a) < 1/n$ and $d_T(f(x_)n,L) \geq \epsilon$.\\
+\pause
+In this case, $\{x_n\}$ is a sequence of values in $A\backslash\{a\}$ which converges to $a$.\\
+\pause
+However, $\{f(x_n)\}$ never gets closer than $\epsilon$ to $L$, so it cannot converge to $L$.\\
+\pause
+This is a contradiction.
+\end{proof}
+\end{frame}
+
+\subsection{Continuity}
+
+\begin{frame}{Continuity}
+Let $(S,d_S)$ and $(T,d_T)$ be metric spaces and $f: S\rightarrow T$ a function.
+\pause
+\begin{defn}
+\pause
+Then $f$ is continuous at a point $p\in S$ if 
+if for all $\epsilon > 0$ there exists $\delta > 0$ such that
+$$d_S(x,p) < \delta\ \Rightarrow\ d_T(f(x),f(p)) < \epsilon.$$
+\pause
+Equivalently, $f(B_S(p;\delta))\subseteq B_T(f(p);\epsilon)$.
+\pause
+We say $f$ is continuous on $A\subseteq S$ if $f(x)$ is continuous at every point $p\in A$.
+\pause
+If $f$ is continuous on $S$, we simply say $f$ is continuous.
+\end{defn}
+\end{frame}
+
+\begin{frame}{Sequence version}
+\pause
+\begin{thm}
+Let $(S,d_S)$ and $(T,d_T)$ be metric spaces and $f: S\rightarrow T$ a function.
+\pause
+Then $f$ is continuous at a point $p$ in $S$ if for all sequences $\{x_n\}$ of values in $S$ which converge to $p$, we have
+\pause
+$$\lim_{n\rightarrow\infty} f(x_n) = f(p).$$
+\end{thm}
+\pause
+Intuitively, continuity means
+$$\lim_{n\rightarrow\infty} f(x_n) = f\left(\lim_{n\rightarrow\infty} x_n\right).$$
+\end{frame}
+
+\begin{frame}{Compositions}
+\begin{thm}
+Suppose $(S,d_S)$, $(T,d_T)$, and $(U,d_U)$ are metric spaces and $f: S\rightarrow T$ and $g: T\rightarrow U$ are functions.\\
+\pause
+If $f$ is continuous at $p$ and $g$ is continuous at $f(p)$, then the composition $h = g\circ f: S\rightarrow U$ defined by $h(x) = g(f(x))$ is continuous at $p$.
+\end{thm}
+\end{frame}
+
+\begin{frame}{Challenge!}
+\begin{prob}
+Prove the previous theorem!
+\end{prob}
+\end{frame}
+
+\begin{frame}{Preimages}
+\begin{defn}
+Suppose $f: S\rightarrow T$ is a function and that $Y\subseteq T$.\\
+\pause
+The \textbf{inverse image} or \textbf{preimage} of $Y$ is the set
+$$f^{-1}(Y) = \{x: x\in S,\ \text{and}\ f(x)\in Y\}.$$
+\end{defn}
+\end{frame}
+
+\begin{frame}{Challenge!}
+\begin{prob}
+Suppose that $S\rightarrow T$ and $Y\subseteq Z\subseteq T$.\\
+Prove that
+$$f^{-1}(Y)\subseteq f^{-1}(Z).$$
+\end{prob}
+\end{frame}
+
+
+\begin{frame}{Open sets}
+\begin{thm}
+Suppose $(S,d_S)$ and $(T,d_T)$ are metric spaces and $f: S\rightarrow T$ is a function.\\
+\pause
+Then $f$ is continuous if and only if $f^{-1}(V)$ is open for all open subsets $V\subseteq T$.
+\end{thm}
+\end{frame}
+
+\begin{frame}{Closed sets}
+\begin{thm}
+Suppose $(S,d_S)$ and $(T,d_T)$ are metric spaces and $f: S\rightarrow T$ is a function.\\
+\pause
+Then $f$ is continuous if and only if $f^{-1}(A)$ is closed for all closed subsets $A\subseteq T$.
+\end{thm}
+\end{frame}
+
+
+
+\end{document}
+
+
