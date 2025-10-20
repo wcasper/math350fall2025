@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  20 OCT 2025 09:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  20 OCT 2025 10:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1415,15 +1415,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 368.
  (./lec16.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 368.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 368.
-
-
-Package rerunfilecheck Warning: File `lec16.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `lec16.out':
-(rerunfilecheck)             Before: 84860191C2C037403AC6FCE960273449;181
-(rerunfilecheck)             After:  1B05290B77757ACB21DA2EB2E4383348;181.
+Package rerunfilecheck Info: File `lec16.out' has not changed.
+(rerunfilecheck)             Checksum: 1B05290B77757ACB21DA2EB2E4383348;181.
  ) 
 Here is how much of TeX's memory you used:
  18468 strings out of 494847
@@ -1443,7 +1436,7 @@ public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
 hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on lec16.pdf (78 pages, 304214 bytes).
+Output written on lec16.pdf (78 pages, 304396 bytes).
 PDF statistics:
  2429 PDF objects out of 2487 (max. 8388607)
  2299 compressed objects within 23 object streams
