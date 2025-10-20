@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  20 OCT 2025 10:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  20 OCT 2025 10:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1309,57 +1309,57 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 
 ] [49
 
-] [50
+]
+Overfull \vbox (36.07224pt too high) detected at line 295
+ []
 
-] [51
+[50
 
 ]
-Overfull \vbox (36.07224pt too high) detected at line 303
+Overfull \vbox (36.07224pt too high) detected at line 295
+ []
+
+[51
+
+]
+Overfull \vbox (36.07224pt too high) detected at line 295
  []
 
 [52
 
 ]
-Overfull \vbox (36.07224pt too high) detected at line 303
+Overfull \vbox (36.07224pt too high) detected at line 295
  []
 
 [53
 
 ]
-Overfull \vbox (36.07224pt too high) detected at line 303
+Overfull \vbox (36.07224pt too high) detected at line 295
  []
 
 [54
 
 ]
-Overfull \vbox (36.07224pt too high) detected at line 303
+Overfull \vbox (36.07224pt too high) detected at line 295
  []
 
 [55
 
 ]
-Overfull \vbox (36.07224pt too high) detected at line 303
+Overfull \vbox (36.07224pt too high) detected at line 295
  []
 
 [56
 
 ]
-Overfull \vbox (36.07224pt too high) detected at line 303
+Overfull \vbox (36.07224pt too high) detected at line 295
  []
 
 [57
 
-]
-Overfull \vbox (36.07224pt too high) detected at line 303
- []
+] [58
 
-[58
-
-]
-Overfull \vbox (36.07224pt too high) detected at line 303
- []
-
-[59
+] [59
 
 ] [60
 
@@ -1373,18 +1373,18 @@ Overfull \vbox (36.07224pt too high) detected at line 303
 
 ] [65
 
-] [66
+] (./lec16.toc) [66
 
 ] [67
 
-] (./lec16.toc) [68
+] [68
 
-] [69
+]
+[69
 
 ] [70
 
-]
-[71
+] [71
 
 ] [72
 
@@ -1396,10 +1396,6 @@ Overfull \vbox (36.07224pt too high) detected at line 303
 
 ] [76
 
-] [77
-
-] [78
-
 ]
 \tf@nav=\write6
 \openout6 = `lec16.nav'.
@@ -1410,19 +1406,19 @@ Overfull \vbox (36.07224pt too high) detected at line 303
 \tf@snm=\write8
 \openout8 = `lec16.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 368.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 368.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 360.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 360.
  (./lec16.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 368.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 368.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 360.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 360.
 Package rerunfilecheck Info: File `lec16.out' has not changed.
-(rerunfilecheck)             Checksum: 1B05290B77757ACB21DA2EB2E4383348;181.
+(rerunfilecheck)             Checksum: FFCB868465FEAB6AC15A3D3A8AFE837F;181.
  ) 
 Here is how much of TeX's memory you used:
- 18468 strings out of 494847
- 342255 string characters out of 6179079
+ 18462 strings out of 494847
+ 342201 string characters out of 6179079
  424624 words of memory out of 5000000
- 21182 multiletter control sequences out of 15000+600000
+ 21180 multiletter control sequences out of 15000+600000
  33717 words of font info for 53 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  56i,19n,65p,800b,640s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1436,10 +1432,10 @@ public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
 hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on lec16.pdf (78 pages, 304396 bytes).
+Output written on lec16.pdf (76 pages, 299573 bytes).
 PDF statistics:
- 2429 PDF objects out of 2487 (max. 8388607)
- 2299 compressed objects within 23 object streams
- 160 named destinations out of 1000 (max. 500000)
+ 2370 PDF objects out of 2487 (max. 8388607)
+ 2242 compressed objects within 23 object streams
+ 156 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
