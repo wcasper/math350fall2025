@@ -57,7 +57,7 @@ b) Let $$f: \mathbb{R}^2\rightarrow\mathbb{R}$$ be the function defined by
 
 $$f(x,y) = \left\lbrace\begin{array}{cc}
 (x+y)\sin(1/x)\sin(1/y), &  (x,y)\neq (0,0)\\
-0, & (x,y) = (0,0)
+0, & x =0\ \text{or}\ y=0
 \end{array}\right.$$
 
 Does the limit
