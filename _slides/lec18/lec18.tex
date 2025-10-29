@@ -1,0 +1,349 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This file is a template using the "beamer" package to create slides for a talk or presentation
+% - Giving a talk on some subject.
+% - The talk is between 15min and 45min long.
+% - Style is ornate.
+
+% MODIFIED by Jonathan Kew, 2008-07-06
+% The header comments and encoding in this file were modified for inclusion with TeXworks.
+% The content is otherwise unchanged from the original distributed with the beamer package.
+
+\documentclass{beamer}
+\setbeamercovered{invisible}
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[utf8]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%%% MATH RELATED
+
+\input{macros.tex}
+
+\title{MATH 350-2 Advanced Calculus} 
+\subtitle
+{} % (optional)
+
+\author[W.R. Casper] % (optional, use only with lots of authors)
+{W.R. Casper}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[California State University Fullerton] % (optional, but mostly needed)
+{
+  Department of Mathematics\\
+  California State University Fullerton}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:  
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+\section{Real Analysis Lecture 18}
+
+\subsection{Uniform continuity}
+
+\begin{frame}{Uniform continuity}
+\begin{defn}
+Let $(S,d_S)$ and $(T,d_T)$ be metric spaces and $A\subseteq S$.
+We say that a function $f: A\rightarrow T$ is \textbf{uniformly continuous} on $A$ if for all $\epsilon > 0$ there exists $\delta > 0$ such that
+$$d_S(x,y)< \delta \Rightarrow d_T(f(x),f(y))< \epsilon$$
+for all $x,y\in A$.
+\end{defn}
+\begin{itemize}
+\item $f$ continuous on $A$ means $f$ is continuous at every $a\in A$
+\item $\delta$ can depend on $\epsilon$ and $a$ (not on $x$)
+\item with uniform continuity, $\delta$ can't depend on $a$ ...
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Examples}
+\begin{itemize}
+\item $x$ is uniformly continuous on $\mathbb R$
+\item $x^2$ is NOT uniformly continuous on $\mathbb R$
+\item $1/x$ is continuous on $(0,1)$
+\item $1/x$ is NOT uniformly continuous on $(0,1)$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Relationship with compactness}
+
+\begin{thm}[Heine]
+Let $(S,d_S)$ and $(T,d_T)$ be metric spaces and $A\subseteq S$ be compact.
+Suppose that $f: A\rightarrow T$ is continuous on $A$, then $f$ is uniformly continuous on $A$.
+\end{thm}
+\end{frame}
+
+
+\subsection{Infinite series}
+
+\begin{frame}{Basic definition}
+\begin{defn}
+An \textbf{infinite series} is an ordererd pair of sequences $(\{a_n\},\{s_n\})$ where 
+$$s_n = a_1+a_2+\dots+a_n.$$
+The sequence $\{s_n\}$ is called the \textbf{sequence of partial sums} and $s_n$ is called the $n$'th partial sum.
+We say the series converges or diverges if $\{s_n\}$ converges or diverges.
+\end{defn}
+\textbf{Notation:}
+$$a_1+a_2+a_3+\dots\quad\text{or}\quad \sum_{n=1}^\infty a_n.$$
+We write
+$$\sum_{n=1}^\infty a_n = L$$
+to mean that the limit of the sequence $s_n$ is $L$.
+We call $L$ the \textbf{sum} of the series.
+\end{frame}
+
+\begin{frame}{Examples}
+$$\sum_{n=1}^\infty \frac{1}{n^2+n} = 1.$$
+\pause
+Telescoping:
+\pause
+\begin{align*}
+s_n &= \frac{1}{1^2+1} + \frac{1}{2^2+2} +  \frac{1}{3^2+3} + \dots + \frac{1}{n^2+n}\\
+    &= \left(\frac{1}{1}-\frac{1}{2}\right) + \left(\frac{1}{2}-\frac{1}{3}\right) +\dots+ \left(\frac{1}{n}-\frac{1}{n+1}\right)\\
+    &= 1-\frac{1}{n+1}.
+\end{align*}
+\end{frame}
+
+\begin{frame}{Examples}
+$$\sum_{n=1}^\infty r^n = \frac{r}{1-r},\quad |r| < 1.$$
+\pause
+Geometric:
+\pause
+$$s_n = r + r^2 + r^3 + \dots + r^n= r(1+r+r^2+\dots+r^{n-1}) = r(1+s_{n-1})$$
+\pause
+$$s_n = r + r^2 + r^3 + \dots + r^n= (r+r^2+\dots+r^{n-1}) + r^n = s_{n-1} + r^n$$
+\pause
+$$s_n = \frac{r-r^{n+1}}{1-r}$$
+\end{frame}
+
+\begin{frame}{Examples}
+$$\sum_{n=1}^\infty (-1)^{n+1}\frac{1}{n} = \ln(2)$$
+\pause
+Taylor series:
+\pause
+$$\ln(1-x) = -x - \frac{1}{2}x^2 - \frac{1}{3}x^3 - \frac{1}{4}x^4 - \dots$$
+\pause
+Converges for $-1\leq x < 1$.
+\end{frame}
+
+\begin{frame}{Tests for Convergence}
+\begin{thm}[Cauchy condition]
+The series $\sum a_n$ converges if and only if for all $\epsilon > 0$ there exists $N\in\mathbb Z_+$ such that $n\geq N$ implies
+$$\left\lvert a_{n} + a_{n+1} + \dots + a_{n+p}\right\rvert < \epsilon$$
+for all $p\in\mathbb Z_+$.
+\end{thm}
+\end{frame}
+
+\begin{frame}{Tests for Convergence}
+\begin{defn}
+An \textbf{alternating series} is a series of the form $\sum (-1)^{n+1}a_n$ with $a_n\geq 0$ for all $n$.
+\end{defn}
+\begin{thm}[Alternating Series Test]
+If $a_n$ is a decreasing sequence converging to $0$, then $\sum (-1)^{n+1}a_n$ converges to a real number $s$ and
+$$|s-s_n| < a_{n+1}\quad\forall\ n\in\mathbb Z_+.$$
+\end{thm}
+\end{frame}
+
+\begin{frame}{Tests for Convergence}
+\begin{defn}
+We say $\sum a_n$ is \textbf{absolutely convergent} if $\sum |a_n|$ converges.\\
+We say $\sum a_n$ is \textbf{conditionally convergent} if it is convergent but not absolutely convergent.
+\end{defn}
+\begin{thm}[Absolute Convergence Test]
+If a series is absolutely convergent, then it is convergent.
+\end{thm}
+\end{frame}
+
+\begin{frame}{Tests for Convergence}
+\begin{thm}[Comparison Test]
+If $a_n>0$ and $b_n > 0$ and there exists $c>0$ and $N\in\mathbb Z_+$ with $a_n < cb_n$ then
+$$\sum b_n\ \ \text{converges}\quad \Rightarrow\quad\sum a_n\ \ \text{converges}$$
+\end{thm}
+\end{frame}
+
+\begin{frame}{Tests for Convergence}
+\begin{thm}[Limit Comparison Test]
+If $a_n>0$ and $b_n > 0$ and suppose that $\lim a_n/b_n = c > 0$.  Then
+$$\sum b_n\ \ \text{converges}\quad \Leftrightarrow\quad\sum a_n\ \ \text{converges}$$
+\end{thm}
+\end{frame}
+
+\begin{frame}{Limit infimum/limit supremum}
+\begin{defn}
+Let $a_n$ be a sequence.  Then
+$$\liminf a_n = \lim_n \inf\{a_k: 1\leq \leq n\}$$
+$$\limsup a_n = \lim_n \sup\{a_k: 1\leq \leq n\}$$
+\end{defn}
+\begin{thm}
+If $a_n$ is bounded above, then $\limsup a_n$ exists and if $a_n$ is bounded below, then $\liminf a_n$ exists.
+\end{thm}
+If $a_n$ is not bounded above, we write $\liminf a_n = \infty$.
+If $a_n$ is not bounded below, we write $\liminf a_n = -\infty$.
+\end{frame}
+
+\begin{frame}{Tests for Convergence}
+\begin{thm}[Ratio Test]
+Let $r = \liminf |a_{n+1}/a_n|$ and $R = \limsup |a_{n+1}/a_n|$.
+\begin{enumerate}[(a)]
+\item if $R < 1$ then the series is absolutely convergent
+\item if $r > 1$ then the series is divergent
+\item if $r \leq 1\leq R$ the test is inconclusive
+\end{enumerate}
+\end{thm}
+\end{frame}
+
+\begin{frame}{Tests for Convergence}
+\begin{thm}[Root Test]
+Let $\rho = \limsup \sqrt[n]{|a_n|}$.
+\begin{enumerate}[(a)]
+\item if $\rho < 1$ then the series is absolutely convergent
+\item if $\rho > 1$ then the series is divergent
+\item if $\rho = 1$ the test is inconclusive
+\end{enumerate}
+\end{thm}
+\end{frame}
+
+\subsection{Infinite products}
+
+\begin{frame}{Basic definition}
+\begin{defn}
+An \textbf{infinite product} is an ordererd pair of sequences $(\{a_n\},\{p_n\})$ where 
+$$p_n = a_1a_2\dots a_n.$$
+The sequence $\{p_n\}$ is called the \textbf{sequence of partial products} and $p_n$ is called the $n$'th partial product.
+We say the series converges or diverges if $\{p_n\}$ converges or diverges.
+\end{defn}
+\textbf{Notation:}
+$$a_1a_2a_3\dots\quad\text{or}\quad \prod_{n=1}^\infty a_n.$$
+We write
+$$\prod_{n=1}^\infty a_n = L$$
+to mean that the limit of the sequence $p_n$ is $L$.
+We call $L$ the \textbf{product} of the series.
+\end{frame}
+
+\begin{frame}{Examples}
+Weierstrass product of sine
+$$\sin(\pi x) = \pi z\prod_{n=1}^\infty \left(1-\frac{x^2}{n^2}\right)$$
+\begin{itemize}
+\item first thought of by Euler.
+\item can be used to prove 
+$$\sum \frac{1}{n^2} = \frac{\pi^2}{6}.$$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Examples}
+Let $p_1=2,p_2=3,p_3=5,\dots$ be the prime integers.\\
+The infinite product
+$$\zeta(s) = \prod_{n=1}^\infty \frac{1}{1-p_n^{-s}}$$
+converges for $s>1$.\\
+This product is called the \textbf{Riemann zeta function}.
+\end{frame}
+
+\begin{frame}{Examples}
+\begin{thm}
+For any real number $s>1$,
+$$\zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s}.$$
+\end{thm}
+Therefore
+$$\frac{1}{(1-1/2^2)(1-1/3^2)(1-1/5^2)(1-1/7^2)(1-1/11^2)\dots} = \frac{\pi^2}{6}.$$
+\end{frame}
+
+\begin{frame}{Relation to series}
+\begin{thm}
+Assume $a_n > 0$ for all $n$.
+Then $\prod (1+a_n)$ converges if and only if $\sum a_n$ converges.
+\end{thm}
+\end{frame}
+
+\begin{frame}{Relation to series}
+\begin{defn}
+We say that a product $\prod (1+a_n)$ \textbf{converges absolutely} if $\prod (1+|a_n|)$ converges.
+\end{defn}
+\begin{thm}
+If $\prod (1+a_n)$ converges absolutely (equiv. $\sum a_n$ converges absolutely), then $\prod (1+a_n)$ converges.
+\end{thm}
+\end{frame}
+
+\end{document}
+
+
