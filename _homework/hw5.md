@@ -31,7 +31,7 @@ b) Show that if $$f: S\rightarrow T$$ is continuous, then $$f$$ must be a consta
 
 **Problem 2:**
 
-For each of the following, choices of $$S$$ and $$T$$, either give an example of a function $$f: S\rightarrow T$$ with $$f(S)=T$$ or explain (with proof) why no such function exists.  The metric is assumed to be Euclidean throughout this problem.  [Hint: think about compactness and connectedness]
+For each of the following, choices of $$S$$ and $$T$$, either give an example of a continuous function $$f: S\rightarrow T$$ with $$f(S)=T$$ or explain (with proof) why no such function exists.  The metric is assumed to be Euclidean throughout this problem.  [Hint: think about compactness and connectedness]
 
 a) $$S=(0,1)$$ and $$T=(0,1]$$
 
