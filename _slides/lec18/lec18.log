@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  29 OCT 2025 12:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  3 NOV 2025 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1272,7 +1272,7 @@ Overfull \vbox (32.21872pt too high) detected at line 174
 ] (./lec18.toc) [29
 
 ]
-Overfull \vbox (34.18971pt too high) detected at line 302
+Overfull \vbox (34.18971pt too high) detected at line 301
  []
 
 [30
@@ -1282,7 +1282,7 @@ Overfull \vbox (34.18971pt too high) detected at line 302
 ] [32
 
 ]
-Overfull \hbox (0.35875pt too wide) detected at line 329
+Overfull \hbox (0.35875pt too wide) detected at line 328
 [] \OT1/cmss/m/n/10.95 = []\OML/cmm/m/it/10.95 :
  []
 
@@ -1302,18 +1302,18 @@ Overfull \hbox (0.35875pt too wide) detected at line 329
 \tf@snm=\write8
 \openout8 = `lec18.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 347.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 347.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 346.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 346.
  (./lec18.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 347.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 347.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 346.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 346.
 Package rerunfilecheck Info: File `lec18.out' has not changed.
 (rerunfilecheck)             Checksum: 6726551CA82AA5E6F51CFB82F95EB9FB;257.
  ) 
 Here is how much of TeX's memory you used:
  18398 strings out of 494847
  341712 string characters out of 6179079
- 421624 words of memory out of 5000000
+ 420624 words of memory out of 5000000
  21194 multiletter control sequences out of 15000+600000
  34934 words of font info for 54 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -1328,7 +1328,7 @@ public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
 hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on lec18.pdf (35 pages, 169908 bytes).
+Output written on lec18.pdf (35 pages, 169822 bytes).
 PDF statistics:
  1191 PDF objects out of 1200 (max. 8388607)
  1114 compressed objects within 12 object streams

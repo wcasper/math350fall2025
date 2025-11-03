@@ -237,7 +237,7 @@ If a series is absolutely convergent, then it is convergent.
 
 \begin{frame}{Tests for Convergence}
 \begin{thm}[Comparison Test]
-If $a_n>0$ and $b_n > 0$ and there exists $c>0$ and $N\in\mathbb Z_+$ with $a_n < cb_n$ then
+If $a_n>0$ and $b_n > 0$ and there exists $c>0$ and $N\in\mathbb Z_+$ with $a_n < cb_n$ for all $n\geq N$ then
 $$\sum b_n\ \ \text{converges}\quad \Rightarrow\quad\sum a_n\ \ \text{converges}$$
 \end{thm}
 \end{frame}
@@ -256,10 +256,9 @@ $$\liminf a_n = \lim_n \inf\{a_k: k\geq n\}$$
 $$\limsup a_n = \lim_n \sup\{a_k: k\geq n\}$$
 \end{defn}
 \begin{thm}
-If $a_n$ is bounded above, then $\limsup a_n$ exists and if $a_n$ is bounded below, then $\liminf a_n$ exists.
+If $a_n$ is bounded, then $\limsup a_n$ and $\liminf a_n$ exist.
 \end{thm}
-If $a_n$ is not bounded above, we write $\liminf a_n = \infty$.
-If $a_n$ is not bounded below, we write $\liminf a_n = -\infty$.
+More generally, we write $\liminf a_n = \pm\infty$ and $\limsup a_n = \pm \infty$.
 \end{frame}
 
 \begin{frame}{Tests for Convergence}
