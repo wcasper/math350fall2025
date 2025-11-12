@@ -1,4 +1,5 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Real Analysis Lecture 23}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Differentiation}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Mean Value Theorem}{34}{0}{1}
+\beamer@subsectionintoc {1}{2}{Derivatives and Optima}{34}{0}{1}
+\beamer@subsectionintoc {1}{3}{Mean Value Theorem}{55}{0}{1}
