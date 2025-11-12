@@ -1,0 +1,400 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This file is a template using the "beamer" package to create slides for a talk or presentation
+% - Giving a talk on some subject.
+% - The talk is between 15min and 45min long.
+% - Style is ornate.
+
+% MODIFIED by Jonathan Kew, 2008-07-06
+% The header comments and encoding in this file were modified for inclusion with TeXworks.
+% The content is otherwise unchanged from the original distributed with the beamer package.
+
+\documentclass{beamer}
+\setbeamercovered{invisible}
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[utf8]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%%% MATH RELATED
+
+\input{macros.tex}
+
+\title{MATH 350-2 Advanced Calculus} 
+\subtitle
+{} % (optional)
+
+\author[W.R. Casper] % (optional, use only with lots of authors)
+{W.R. Casper}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[California State University Fullerton] % (optional, but mostly needed)
+{
+  Department of Mathematics\\
+  California State University Fullerton}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:  
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+\section{Real Analysis Lecture 19}
+
+\subsection{Differentiation}
+
+\begin{frame}{Differentiability}
+\begin{defn}
+A real-valued function $f(x)$ defined on an open interval $(a,b)$ is \textbf{differentiable} at $c\in (a,b)$ if
+$$\lim_{x\rightarrow c}\frac{f(x)-f(c)}{x-c}\ \ \text{exists}.$$
+In this case the limit is called the derivative of $f$ at $c$, and denote by $f'(c)$.
+\end{defn}
+\end{frame}
+
+\begin{frame}{Chord function}
+\begin{thm}[Helper Theorem]
+Let $f$ be a real-valued function on $(a,b)$.  Then $f$ is differentiable at $c\in (a,b)$ if and only if there exists a function $f^*$ on $(a,b)$ which is continuous at $c$ and satisfies
+$$f(x)-f(c) = (x-c)f^*(x).$$
+\end{thm}
+\pause
+The function $f^*(x)$ is the \textbf{chord slope function}.
+\end{frame}
+
+\begin{frame}{Chord function}
+\begin{proof}
+\pause
+Suppose $f(x)$ is differentiable at $c$.
+\pause
+Define
+$$f^*(x) = \left\lbrace\begin{array}{cc}
+\frac{f(x)-f(c)}{x-c}, & x\neq c\\
+f'(c), & x= c
+\end{array}\right.$$
+\pause
+Then $\lim_{x\rightarrow c} f^*(x) = f'(c)$, so $f^*$ is continuous at $c$.\\
+\pause
+Conversely, suppose $f^*$ exists and is continuous at $c$.\\
+\pause
+Then
+$$\lim_{x\rightarrow c} \frac{f(x)-f(c)}{x-c} = \lim_{x\rightarrow c} f^*(x) = f^*(c).$$
+\pause
+In particular $f$ is differentiable at $c$ and $f'(x) = f^*(c)$.
+\end{proof}
+\end{frame}
+
+\begin{frame}{Differentiable implies continuous}
+\begin{thm}
+Suppose $f(x)$ is a real valued function on $(a,b)$ and is differentiable at $c\in (a,b)$.\\
+Then $f$ is continuous at $c$.
+\end{thm}
+\pause
+\begin{proof}
+\pause
+By the Helper Theorem, there exists a function $f^*$ on $(a,b)$ which is continuous at $c$ with
+$$f(x) = (x-c)f^*(x).$$
+\pause
+Since $(x-c)$ and $f^*$ are both continuous at $c$, so is $f(x)$.
+\end{proof}
+\end{frame}
+
+\begin{frame}{Additivity of derivatives}
+\begin{thm}
+Let $f,g$ be real functions on $(a,b)$ which are differentiable at $c\in (a,b)$.\\
+$$(f\pm g)'(c) = f'(c) \pm g'(c)$$
+\end{thm}
+\end{frame}
+
+\begin{frame}{Additivity of derivatives}
+\begin{proof}
+\pause
+By the Helper Theorem
+$$f(x)-f(c) = (x-c)f^*(x),\quad g(x)-g(c) = (x-c)g^*(x)$$
+\pause
+Therefore
+$$(f\pm g)(x) - (f\pm g)(c) = (x-c)(f^*(x) \pm g^*(x)).$$
+\pause
+Since $f^*$ and $g^*$ are continuous at $c$, so is $f^*\pm g^*$.\\
+\pause
+The Helper Theorem implies that $g\pm f$ is differentiable and
+$$(f\pm g)'(c) = f'(c) \pm g'(c)$$
+\end{proof}
+\end{frame}
+
+\begin{frame}{Product rule}
+\begin{thm}
+Let $f,g$ be real functions on $(a,b)$ which are differentiable at $c\in (a,b)$.\\
+$$(fg)'(c) = f'(c)g(c) + f(c)g'(c)$$
+\end{thm}
+\end{frame}
+\begin{frame}{Product rule}
+\begin{proof}
+\pause
+By the Helper Theorem
+$$f(x)-f(c) = (x-c)f^*(x),\quad g(x)-g(c) = (x-c)g^*(x)$$
+\pause
+Therefore
+\begin{align*}
+(fg)(x)-(fg)(c)
+  & = f(x)g(x) - f(c)g(c)\\
+  & = f(x)g(x) - f(x)g(c) + f(x)g(c)-f(c)g(c)\\
+  & = f(x)(g(x) - g(c)) + (f(x)-f(c))g(c)\\
+  & = (x-c)[f(x)g^*(x) + f^*(x)g(c)]
+\end{align*}
+\pause
+Helper Theorem says:
+$$(fg)'(c) = f(c)g^*(c) + f^*(c)g(c) = f(c)g'(c) + f'(c)g(c).$$
+\end{proof}
+\end{frame}
+
+\begin{frame}{Quotient rule}
+\begin{thm}
+Let $f,g$ be real functions on $(a,b)$ which are differentiable at $c\in (a,b)$ with $g(c)\neq 0$.\\
+$$(f/g)'(c) = \frac{f'(c)g(c) - f(c)g'(c)}{g(c)^2}$$
+\end{thm}
+\end{frame}
+\begin{frame}{Quotient rule}\mbox{}
+{\tiny
+By the Helper Theorem
+$$f(x)-f(c) = (x-c)f^*(x),\quad g(x)-g(c) = (x-c)g^*(x)$$
+\pause
+\begin{align*}
+(f/g)(x) - (f/g)(c)
+  & = \frac{f(x)g(c)-f(c)g(x)}{g(x)g(c)}\\
+  & = \frac{f(x)g(c)-f(c)g(c)+f(c)g(c)-f(c)g(x)}{g(x)g(c)}\\
+  & = \frac{(f(x)-f(c))g(c)-f(c)(g(x)-g(c))}{g(x)g(c)}\\
+  & = (x-c)\frac{f^*(x)g(c)-f(c)g^*(x)}{g(x)g(c)}\\
+\end{align*}
+\pause
+Helper Theorem says:
+$$(f/g)'(c) = \frac{f^*(c)g(c)-f(c)g^*(c)}{g(c)^2} = \frac{f'(c)g(c)-f(c)g'(c)}{g(c)^2}.$$
+}
+\end{frame}
+
+\begin{frame}{Chain rule}
+\begin{thm}
+Let $f$ be a real function on an interval $I = (a,b)$, and let $g$ be a real function on $f(I)$, and consider the composition
+$$h = g\circ f: (a,b)\rightarrow\mathbb{R}.$$
+Suppose $c\in (a,b)$ and $f(c)$ is an interior point of $f(I)$.
+If $f$ is differentiable at $c$ and $g$ is differentiable at $f(c)$, then $h$ is differentiable at $c$ and
+$$h'(c) = (g\circ f)'(c) = g'(f(c))f'(c).$$
+\end{thm}
+\end{frame}
+
+\subsection{Mean Value Theorem}
+
+\begin{frame}{Local maxima and minima}
+\begin{defn}
+Let $(M,d)$ be a metric space and $f$ be a real-valued function on a subset $S\subseteq M$.
+\pause
+Then $f$ has an \textbf{absolute (or global) maximum at $c\in S$} if
+$$f(x)\leq f(c)\quad\text{for all}\ x\in S.$$
+\pause
+It has \textbf{local maximum at $a\in S$} if there exists an $r>0$ such that
+$$f(x)\leq f(c)\quad\text{for all}\ x\in B_M(c;r)\cap S.$$
+\pause
+Absolute and local minima are defined similarly.
+\end{defn}
+\end{frame}
+
+\begin{frame}{Critical points}
+\begin{defn}
+Let $f$ be a real-valued function on an open interval $(a,b)$.
+\pause
+A point $c\in (a,b)$ is called a \textbf{critical point} of $f$ if either $f$ is not differentiable at $c$ or else $f'(c) = 0$.
+\end{defn}
+\pause
+\begin{thm}
+Let $f$ be a real-valued function on an open interval $(a,b)$ and suppose that $f$ has a local maximum or local minimum at $c\in (a,b)$.
+Then $c$ is a critical point of $f$.
+\end{thm}
+\end{frame}
+
+\begin{frame}{Critical points}
+\begin{proof}
+\pause
+We will prove this in the case $c$ is a local maximum.  The proof in the case of a local minimum is similar.\\
+\pause
+If $f$ is not differentiable at $c$, then we're done!\\
+\pause
+Therefore assume that it is differentiable.\\
+\pause
+By definition, there exists $r>0$ such that
+$$f(x)\leq f(c)\quad\text{for all}\ x\in (c-r,c+r)\cap (a,b).$$
+\pause
+To obtain a contradiction, suppose that $f'(c)\neq 0$.\\
+\pause
+Then by the Helper Theorem, there is a function $f^*(x)$ defined on $(a,b)$ and continuous at $c\in (a,b)$ with
+$$f(x)-f(c) = (x-c)f^*(x).$$
+\end{proof}
+\end{frame}
+
+\begin{frame}{Critical points}
+\begin{proof}
+Moreover, $f^*(c) = f'(c)\neq 0$.\\
+\pause
+Since $f$ is continuous, we may choose $\delta > 0$ such that
+$$|x-c| < \delta\ \ \Rightarrow\ \ |f^*(x) - f^*(c)| < |f^*(c)|/2.$$
+\pause
+Moreover, we may assume that $\delta < r$.\\
+\pause
+It follows that $f^*(x) > |f^*(c)|/2$ for all $x\in (a,b)$ with $|x-c|<\delta$.
+\pause
+However,
+$$f(c\pm \delta/2) = f(c) \pm \frac{1}{2}\delta f^*(c+\delta/2),$$
+one of these will be larger than $f(c)$.  \pause Contradiction!
+\end{proof}
+\end{frame}
+
+\begin{frame}{Rolle's Theorem}
+\begin{thm}{Rolle's Theorem}
+Suppose that $f(x)$ is a real-valued function on $[a,b]$ which is
+\begin{itemize}
+\pause
+\item continuous on $[a,b]$;
+\pause
+\item differentiable at each point in $(a,b)$;
+\pause
+\item and which satisfies $f(a) = f(b)$.
+\end{itemize}
+\pause
+Then there exists $c\in (a,b)$ with $f'(c) = 0$.
+\end{thm}
+\end{frame}
+
+\begin{frame}{Rolle's Theorem}
+\begin{proof}
+Suppose otherwise.\\
+\pause
+By the Extreme Value Theorem, $f(x)$ has an absolute maximum on $[a,b]$, as well as an absolute minimum on $[a,b]$.\\
+\pause
+If both of these occur at the endpoints, then the absolute max is the absolute min, forcing $f$ to be constant.\\
+\pause
+Then $f'(c)=0$ for every $c\in (a,b)$.\\
+\pause
+Otherwise at least one of the points happens inside, so $f(x)$ has a local max or local min at a value $c$ inside $(a,b)$.\\
+\pause
+The point $c$ is a critical point, and since $f$ is differentiable at $c$, we must have $f'(c)=0$.
+\end{proof}
+\end{frame}
+
+\begin{frame}{Mean Value Theorem}
+\begin{thm}{Rolle's Theorem}
+Suppose that $f(x)$ is a real-valued function on $[a,b]$ which is
+\begin{itemize}
+\pause
+\item continuous on $[a,b]$;
+\pause
+\item and differentiable at each point in $(a,b)$.
+\end{itemize}
+\pause
+Then there exists $c\in (a,b)$ with
+$$f'(c) = \frac{f(b)-f(a)}{b-a}.$$
+\end{thm}
+\end{frame}
+
+\begin{frame}{Mean Value Theorem}
+\begin{proof}
+Consider the function
+$$g(x) = f(x)-\left(\frac{f(b)-f(a)}{b-a}\right)(x-a) + f(a).$$
+\pause
+Then $g(x)$ is
+\begin{itemize}
+\pause
+\item continuous on $[a,b]$;
+\pause
+\item differentiable at each point in $(a,b)$;
+\pause
+\item and satisfies $g(a) = g(b)$.
+\end{itemize}
+\pause
+By Rolle's Theorem, there exists $c\in (a,b)$ with
+$$0 = g'(c) = f'(c) -\frac{f(b)-f(a)}{b-a}.$$
+\end{proof}
+\end{frame}
+
+
+
+\end{document}
+
+
