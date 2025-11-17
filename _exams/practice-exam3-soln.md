@@ -318,14 +318,14 @@ Thus the series converges and is equal to $$3/4$$.
 
 * (c) We can write
 
-$$0.11120252025202520252025\dots = \frac{111}{1000} + \frac{1}{1000}\sum_{k=1}^\infty \left(\frac{2025}{10000}\right)^k$$
+$$0.11120252025202520252025\dots = \frac{111}{1000} + \frac{2025}{1000}\sum_{k=1}^\infty \left(\frac{1}{10000}\right)^k$$
 
 Then using the geometric series
 
-$$\frac{111}{1000} + \frac{1}{1000}\frac{\frac{2025}{10000}}{1-\frac{2025}{10000}} = \frac{887250}{7975000}.$$
+$$\frac{111}{1000} + \frac{2025}{1000}\frac{1}{9999} = \frac{61773}{555500}.$$
 
 Therefore 
 
-$$0.11120252025202520252025\dots  = \frac{887250}{7975000}.$$
+$$0.11120252025202520252025\dots  = \frac{61773}{555500}.$$
 
 
