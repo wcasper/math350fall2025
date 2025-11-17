@@ -153,6 +153,51 @@ A partition $P'$ is a \textbf{refinement} of $P$ if $P\subseteq P'$.
 \end{defn}
 \end{frame}
 
+\begin{frame}{Challenge!}
+\begin{prob}
+What is the smallest possible partition $P$ of $[-2,3]$?  How many sample points will $P$ need?
+\end{prob}
+\pause
+\begin{prob}
+Give an example of some sample points of the partition $P=\{-2,-1,0,1,2,3\}$ of $[-2,3]$.
+Can you find a refinement of the partition $P$?
+\end{prob}
+\pause
+\begin{prob}
+Can you find a refinement of the previous partition $P$?
+\end{prob}
+\end{frame}
+
+\begin{frame}{Riemann sums}
+Riemann sums on $[a,b]$
+\begin{itemize}
+\pause
+\item right Riemann sum with $n$ rectangles
+$$\sum_{k=1}^n f(x_k)\Delta x,\quad x_k = a+k\Delta x,\ \ \Delta x = (b-a)/n$$
+\pause
+\item left Riemann sum with $n$ rectangles
+$$\sum_{k=1}^n f(x_{k-1})\Delta x,\quad x_k = a+k\Delta x,\ \ \Delta x = (b-a)/n$$
+\pause
+\item midpoint rule
+$$\sum_{k=1}^n f(x_{k}^*)\Delta x,\quad x_k^* = a+(k+1/2)\Delta x,\ \ \Delta x = (b-a)/n$$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Riemann sums}
+Generalizations: 
+\begin{itemize}
+\pause
+\item generic sample points
+$$\sum_{k=1}^n f(x_k^*)\Delta x,\quad x_k^* \in [a+(k-1)\Delta x,a+k\Delta x],\ \ \Delta x = (b-a)/n$$
+\pause
+\item not equally spaced rectangles
+$$\sum_{k=1}^n f(x_k^*)(x_k-x_{k-1}),\quad x_k^*\in [x_{k-1},x_k],\ \ a=x_0<x_1<\dots < x_n=b$$
+\pause
+\item weighted integral
+$$\sum_{k=1}^n f(x_k^*)(\alpha(x_k)-\alpha(x_{k-1})),\quad x_k^*\in [x_{k-1},x_k],\ \ a=x_0<x_1<\dots < x_n=b$$
+\end{itemize}
+\end{frame}
+
 \begin{frame}{Riemann-Stieltjes sums}
 Notation: given a real-valued function $\alpha$ on $[a,b]$\\
 $$\Delta \alpha_k(P) = \alpha(x_k)-\alpha(x_{k-1}),\quad k=1,2,\dots,n.$$
