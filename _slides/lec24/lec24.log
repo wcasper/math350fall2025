@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  17 NOV 2025 09:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  17 NOV 2025 09:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1261,31 +1261,6 @@ v/m/sl/10.95 x \OT1/cmss/m/n/10.95 = (\T1/phv/m/sl/10.95 b \OMS/cmsy/m/n/10.95
 10.95 n
  []
 
-
-Overfull \hbox (29.75026pt too wide) detected at line 199
-[] \T1/phv/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\T1/phv/m/sl/10.95 x[]\OT1/cmss/m/n
-/10.95 )(\T1/phv/m/sl/10.95 x[] \OMS/cmsy/m/n/10.95 ^^@ \T1/phv/m/sl/10.95 x[]\
-OT1/cmss/m/n/10.95 )\OML/cmm/m/it/10.95 ;  \T1/phv/m/sl/10.95 x[] \OMS/cmsy/m/n
-/10.95 2 \OT1/cmss/m/n/10.95 [\T1/phv/m/sl/10.95 x[]\OML/cmm/m/it/10.95 ; \T1/p
-hv/m/sl/10.95 x[]\OT1/cmss/m/n/10.95 ]\OML/cmm/m/it/10.95 ;   \T1/phv/m/sl/10.9
-5 a \OT1/cmss/m/n/10.95 = \T1/phv/m/sl/10.95 x[] \OML/cmm/m/it/10.95 < \T1/phv/
-m/sl/10.95 x[] \OML/cmm/m/it/10.95 < [] < \T1/phv/m/sl/10.95 x[] \OT1/cmss/m/n/
-10.95 = \T1/phv/m/sl/10.95 b
- []
-
-
-Overfull \hbox (60.87416pt too wide) detected at line 199
-[] \T1/phv/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\T1/phv/m/sl/10.95 x[]\OT1/cmss/m/n
-/10.95 )(\OML/cmm/m/it/10.95 \OT1/cmss/m/n/10.95 (\T1/phv/m/sl/10.95 x[]\OT1/c
-mss/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 \OT1/cmss/m/n/10.9
-5 (\T1/phv/m/sl/10.95 x[]\OT1/cmss/m/n/10.95 ))\OML/cmm/m/it/10.95 ;  \T1/phv/m
-/sl/10.95 x[] \OMS/cmsy/m/n/10.95 2 \OT1/cmss/m/n/10.95 [\T1/phv/m/sl/10.95 x[]
-\OML/cmm/m/it/10.95 ; \T1/phv/m/sl/10.95 x[]\OT1/cmss/m/n/10.95 ]\OML/cmm/m/it/
-10.95 ;   \T1/phv/m/sl/10.95 a \OT1/cmss/m/n/10.95 = \T1/phv/m/sl/10.95 x[] \OM
-L/cmm/m/it/10.95 < \T1/phv/m/sl/10.95 x[] \OML/cmm/m/it/10.95 < [] < \T1/phv/m/
-sl/10.95 x[] \OT1/cmss/m/n/10.95 = \T1/phv/m/sl/10.95 b
- []
-
 [20
 
 ]
@@ -1300,31 +1275,6 @@ OT1/cmss/m/n/10.95 + \T1/phv/m/sl/10.95 k\OT1/cmss/m/n/10.95 ^^A\T1/phv/m/sl/10
 v/m/sl/10.95 x \OT1/cmss/m/n/10.95 = (\T1/phv/m/sl/10.95 b \OMS/cmsy/m/n/10.95 
 ^^@ \T1/phv/m/sl/10.95 a\OT1/cmss/m/n/10.95 )\OML/cmm/m/it/10.95 =\T1/phv/m/sl/
 10.95 n
- []
-
-
-Overfull \hbox (29.75026pt too wide) detected at line 199
-[] \T1/phv/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\T1/phv/m/sl/10.95 x[]\OT1/cmss/m/n
-/10.95 )(\T1/phv/m/sl/10.95 x[] \OMS/cmsy/m/n/10.95 ^^@ \T1/phv/m/sl/10.95 x[]\
-OT1/cmss/m/n/10.95 )\OML/cmm/m/it/10.95 ;  \T1/phv/m/sl/10.95 x[] \OMS/cmsy/m/n
-/10.95 2 \OT1/cmss/m/n/10.95 [\T1/phv/m/sl/10.95 x[]\OML/cmm/m/it/10.95 ; \T1/p
-hv/m/sl/10.95 x[]\OT1/cmss/m/n/10.95 ]\OML/cmm/m/it/10.95 ;   \T1/phv/m/sl/10.9
-5 a \OT1/cmss/m/n/10.95 = \T1/phv/m/sl/10.95 x[] \OML/cmm/m/it/10.95 < \T1/phv/
-m/sl/10.95 x[] \OML/cmm/m/it/10.95 < [] < \T1/phv/m/sl/10.95 x[] \OT1/cmss/m/n/
-10.95 = \T1/phv/m/sl/10.95 b
- []
-
-
-Overfull \hbox (60.87416pt too wide) detected at line 199
-[] \T1/phv/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\T1/phv/m/sl/10.95 x[]\OT1/cmss/m/n
-/10.95 )(\OML/cmm/m/it/10.95 \OT1/cmss/m/n/10.95 (\T1/phv/m/sl/10.95 x[]\OT1/c
-mss/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 \OT1/cmss/m/n/10.9
-5 (\T1/phv/m/sl/10.95 x[]\OT1/cmss/m/n/10.95 ))\OML/cmm/m/it/10.95 ;  \T1/phv/m
-/sl/10.95 x[] \OMS/cmsy/m/n/10.95 2 \OT1/cmss/m/n/10.95 [\T1/phv/m/sl/10.95 x[]
-\OML/cmm/m/it/10.95 ; \T1/phv/m/sl/10.95 x[]\OT1/cmss/m/n/10.95 ]\OML/cmm/m/it/
-10.95 ;   \T1/phv/m/sl/10.95 a \OT1/cmss/m/n/10.95 = \T1/phv/m/sl/10.95 x[] \OM
-L/cmm/m/it/10.95 < \T1/phv/m/sl/10.95 x[] \OML/cmm/m/it/10.95 < [] < \T1/phv/m/
-sl/10.95 x[] \OT1/cmss/m/n/10.95 = \T1/phv/m/sl/10.95 b
  []
 
 [21
@@ -1343,31 +1293,6 @@ v/m/sl/10.95 x \OT1/cmss/m/n/10.95 = (\T1/phv/m/sl/10.95 b \OMS/cmsy/m/n/10.95
 10.95 n
  []
 
-
-Overfull \hbox (29.75026pt too wide) detected at line 199
-[] \T1/phv/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\T1/phv/m/sl/10.95 x[]\OT1/cmss/m/n
-/10.95 )(\T1/phv/m/sl/10.95 x[] \OMS/cmsy/m/n/10.95 ^^@ \T1/phv/m/sl/10.95 x[]\
-OT1/cmss/m/n/10.95 )\OML/cmm/m/it/10.95 ;  \T1/phv/m/sl/10.95 x[] \OMS/cmsy/m/n
-/10.95 2 \OT1/cmss/m/n/10.95 [\T1/phv/m/sl/10.95 x[]\OML/cmm/m/it/10.95 ; \T1/p
-hv/m/sl/10.95 x[]\OT1/cmss/m/n/10.95 ]\OML/cmm/m/it/10.95 ;   \T1/phv/m/sl/10.9
-5 a \OT1/cmss/m/n/10.95 = \T1/phv/m/sl/10.95 x[] \OML/cmm/m/it/10.95 < \T1/phv/
-m/sl/10.95 x[] \OML/cmm/m/it/10.95 < [] < \T1/phv/m/sl/10.95 x[] \OT1/cmss/m/n/
-10.95 = \T1/phv/m/sl/10.95 b
- []
-
-
-Overfull \hbox (60.87416pt too wide) detected at line 199
-[] \T1/phv/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\T1/phv/m/sl/10.95 x[]\OT1/cmss/m/n
-/10.95 )(\OML/cmm/m/it/10.95 \OT1/cmss/m/n/10.95 (\T1/phv/m/sl/10.95 x[]\OT1/c
-mss/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 \OT1/cmss/m/n/10.9
-5 (\T1/phv/m/sl/10.95 x[]\OT1/cmss/m/n/10.95 ))\OML/cmm/m/it/10.95 ;  \T1/phv/m
-/sl/10.95 x[] \OMS/cmsy/m/n/10.95 2 \OT1/cmss/m/n/10.95 [\T1/phv/m/sl/10.95 x[]
-\OML/cmm/m/it/10.95 ; \T1/phv/m/sl/10.95 x[]\OT1/cmss/m/n/10.95 ]\OML/cmm/m/it/
-10.95 ;   \T1/phv/m/sl/10.95 a \OT1/cmss/m/n/10.95 = \T1/phv/m/sl/10.95 x[] \OM
-L/cmm/m/it/10.95 < \T1/phv/m/sl/10.95 x[] \OML/cmm/m/it/10.95 < [] < \T1/phv/m/
-sl/10.95 x[] \OT1/cmss/m/n/10.95 = \T1/phv/m/sl/10.95 b
- []
-
 [22
 
 ]
@@ -1382,31 +1307,6 @@ OT1/cmss/m/n/10.95 + \T1/phv/m/sl/10.95 k\OT1/cmss/m/n/10.95 ^^A\T1/phv/m/sl/10
 v/m/sl/10.95 x \OT1/cmss/m/n/10.95 = (\T1/phv/m/sl/10.95 b \OMS/cmsy/m/n/10.95 
 ^^@ \T1/phv/m/sl/10.95 a\OT1/cmss/m/n/10.95 )\OML/cmm/m/it/10.95 =\T1/phv/m/sl/
 10.95 n
- []
-
-
-Overfull \hbox (29.75026pt too wide) detected at line 199
-[] \T1/phv/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\T1/phv/m/sl/10.95 x[]\OT1/cmss/m/n
-/10.95 )(\T1/phv/m/sl/10.95 x[] \OMS/cmsy/m/n/10.95 ^^@ \T1/phv/m/sl/10.95 x[]\
-OT1/cmss/m/n/10.95 )\OML/cmm/m/it/10.95 ;  \T1/phv/m/sl/10.95 x[] \OMS/cmsy/m/n
-/10.95 2 \OT1/cmss/m/n/10.95 [\T1/phv/m/sl/10.95 x[]\OML/cmm/m/it/10.95 ; \T1/p
-hv/m/sl/10.95 x[]\OT1/cmss/m/n/10.95 ]\OML/cmm/m/it/10.95 ;   \T1/phv/m/sl/10.9
-5 a \OT1/cmss/m/n/10.95 = \T1/phv/m/sl/10.95 x[] \OML/cmm/m/it/10.95 < \T1/phv/
-m/sl/10.95 x[] \OML/cmm/m/it/10.95 < [] < \T1/phv/m/sl/10.95 x[] \OT1/cmss/m/n/
-10.95 = \T1/phv/m/sl/10.95 b
- []
-
-
-Overfull \hbox (60.87416pt too wide) detected at line 199
-[] \T1/phv/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\T1/phv/m/sl/10.95 x[]\OT1/cmss/m/n
-/10.95 )(\OML/cmm/m/it/10.95 \OT1/cmss/m/n/10.95 (\T1/phv/m/sl/10.95 x[]\OT1/c
-mss/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 \OT1/cmss/m/n/10.9
-5 (\T1/phv/m/sl/10.95 x[]\OT1/cmss/m/n/10.95 ))\OML/cmm/m/it/10.95 ;  \T1/phv/m
-/sl/10.95 x[] \OMS/cmsy/m/n/10.95 2 \OT1/cmss/m/n/10.95 [\T1/phv/m/sl/10.95 x[]
-\OML/cmm/m/it/10.95 ; \T1/phv/m/sl/10.95 x[]\OT1/cmss/m/n/10.95 ]\OML/cmm/m/it/
-10.95 ;   \T1/phv/m/sl/10.95 a \OT1/cmss/m/n/10.95 = \T1/phv/m/sl/10.95 x[] \OM
-L/cmm/m/it/10.95 < \T1/phv/m/sl/10.95 x[] \OML/cmm/m/it/10.95 < [] < \T1/phv/m/
-sl/10.95 x[] \OT1/cmss/m/n/10.95 = \T1/phv/m/sl/10.95 b
  []
 
 [23
@@ -1561,7 +1461,7 @@ ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on lec24.pdf (54 pages, 227889 bytes).
+Output written on lec24.pdf (54 pages, 228273 bytes).
 PDF statistics:
  1653 PDF objects out of 1728 (max. 8388607)
  1554 compressed objects within 16 object streams
