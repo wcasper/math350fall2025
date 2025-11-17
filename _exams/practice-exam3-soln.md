@@ -303,7 +303,7 @@ Since the limit of partial products exists, the infinite product converges and i
 
 * (b) The partial sums are
 
-$$s_n = \sum_{k=1}^n \frac{1}{k(k+2}} = \sum_{k=1}^n \frac{1/2}{k} - \frac{1/2}{k+2}.$$
+$$s_n = \sum_{k=1}^n \frac{1}{k(k+2)} = \sum_{k=1}^n \frac{1/2}{k} - \frac{1/2}{k+2}.$$
 
 This sum also telescopes, so that
 
