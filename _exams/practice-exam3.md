@@ -81,7 +81,7 @@ Let $$S=\mathbb{R}$$ and $$d_S: S\times S\rightarrow \mathbb{R}$$ be the discret
 Determine whether the following infinite series or products converge or diverge.
 If they converge, then find the exact value.
 
-* (a) $$\prod_{n=1}^\infty \frac{n^2-1}{n^2}$$
+* (a) $$\prod_{n=2}^\infty \frac{n^2-1}{n^2}$$
 
 * (b) $$\sum_{n=1}^{\infty} \frac{1}{n(n+2)}$$
 
