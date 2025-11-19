@@ -296,9 +296,9 @@ $$p_n = \prod_{k=2}^\infty \frac{k^2-1}{k^2} = \prod_{k=1}^\infty \left(\frac{(k
 
 This product telescopes, so that
 
-$$p_n = \frac{2}{1}\frac{n+1}{n}.$$
+$$p_n = \frac{1}{2}\frac{n+1}{n}.$$
 
-Taking the limit, we get $$\lim_{n\rightarrow\infty} p_n = 2.$$
+Taking the limit, we get $$\lim_{n\rightarrow\infty} p_n = \frac{1}{2}.$$
 Since the limit of partial products exists, the infinite product converges and is equal to $$2$$.
 
 * (b) The partial sums are
