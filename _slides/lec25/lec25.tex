@@ -1,0 +1,383 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This file is a template using the "beamer" package to create slides for a talk or presentation
+% - Giving a talk on some subject.
+% - The talk is between 15min and 45min long.
+% - Style is ornate.
+
+% MODIFIED by Jonathan Kew, 2008-07-06
+% The header comments and encoding in this file were modified for inclusion with TeXworks.
+% The content is otherwise unchanged from the original distributed with the beamer package.
+
+\documentclass{beamer}
+\setbeamercovered{invisible}
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[utf8]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%%% MATH RELATED
+
+\input{macros.tex}
+
+\title{MATH 350-2 Advanced Calculus} 
+\subtitle
+{} % (optional)
+
+\author[W.R. Casper] % (optional, use only with lots of authors)
+{W.R. Casper}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[California State University Fullerton] % (optional, but mostly needed)
+{
+  Department of Mathematics\\
+  California State University Fullerton}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:  
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+\section{Real Analysis Lecture 24}
+
+\subsection{Riemann-Stieltjes integrals}
+
+\begin{frame}{Riemann sums}
+A Riemann sum of $f(x)$ on $[a,b]$ with $n$ is
+$$R(P,f,\{t_k\}) = \sum_{k=1}^n f(t_k)\Delta x_k$$
+\pause
+where $t_k$ and $\Delta x_k := x_k-x_{k-1}$ come from:
+\begin{itemize}
+\pause
+\item a \textbf{partition} $P =\{x_0=a,x_1,\dots, x_n=b\}$
+\pause
+\item a set of $n$ \textbf{sample points} $t_k\in [x_{k-1},x_k]$ with $1\leq k\leq n$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Riemann integrability}
+\begin{defn}[Very informal first try]
+The Riemann integral is the limit of \emph{all} Riemann sums as we increase the number of rectangles.
+\end{defn}
+\pause
+\begin{quest}
+What problems do you see with this definition?
+\end{quest}
+\end{frame}
+
+\begin{frame}{Some issues}
+Problems with definition:
+\begin{itemize}
+\item for $n$ rectangles, there are uncountably many partitions!
+\item for a specific partition, there are uncountably many sample points!
+\end{itemize}
+How do we do a limit in a place with so many choices?!
+\end{frame}
+
+\begin{frame}{Coarse vs fine}
+\begin{defn}
+If $P$ and $P'$ are two partitions of $[a,b]$ with $P\subseteq P'$, we say $P$
+is \textbf{coarser} than $P'$ and $P'$ is \textbf{finer} than $P$.\\
+Any finer partition is called a \textbf{refinement}.
+\end{defn}
+\pause
+\textbf{Examples:}
+\begin{itemize}
+\pause
+\item $\{1,2,3\}$ is \textbf{finer} than $\{1,3\}$
+\pause
+\item $\{1, 1.1, 2, 2.5, 3\}$ is \textbf{coarser} than $\{1, 1.1, 1.5, 2, 2.5, 2.9, 3\}$
+\pause
+\item $\{1, 1.5, 2, 2.5, 3\}$ and $\{1, 1.2, 1.4, 1.8, 2, 2.2, 2.4, 2.8, 3\}$ are \textbf{incomparable}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Riemann integrability}
+\begin{defn}
+We write 
+$$\int_a^b f(x) dx = A$$
+if for all $\epsilon > 0$, there exists a partition $P_\epsilon$ such that for any finer partition $P$
+$$|R(P,f,\{t_k\}) - A| < \epsilon$$
+for all choices of sample points $\{t_k\}$ of P.\\
+In this case we say $f$ is \textbf{Riemann integrable} on $[a,b]$ and call the value $A$ the \textbf{Riemann integral}.
+\end{defn}
+\end{frame}
+
+\begin{frame}{A first example}
+\begin{prob}
+Let
+$$f(x) = \left\lbrace\begin{array}{cc}
+1, & x < 2\\
+2, & x \geq 2
+\end{array}\right.$$
+What is $\int_1^3 f(x) dx$?
+\end{prob}
+\begin{itemize}
+\pause
+\item Calculus experience says: $\int_1^3 f(x) dx = 3$.
+\pause
+\item How do we prove it? 
+\end{itemize}
+\textbf{INTUITION}: the "action" is near $x=2$, so we should try to make the partition denser there
+\end{frame}
+
+\begin{frame}{A first example}
+Let $\epsilon > 0$. \pause(WLOG $\epsilon < 1$)\\
+Choose $P_\epsilon = \{1,2-\epsilon/4,2, 3\}$\\
+A refinement $P$ of $P_\epsilon$ will look like
+$$P = \{x_0=1,x_1,\dots, x_{\ell}=2-\epsilon,x_{\ell+1},\dots,x_m=2,x_{m+1},\dots, x_n=3\}$$
+Then for any sample points, the Riemann sum is
+\begin{align*}
+R(P,f,\{t_k\})
+  & = \sum_{k=1}^n f(t_k)\Delta x_k\\
+  & = \sum_{k=1}^\ell f(t_k)\Delta x_k + \sum_{k=\ell+1}^m f(t_k)\Delta x_k + \sum_{k=m+1}^n f(t_k)\Delta x_k\\
+\end{align*}
+\end{frame}
+
+\begin{frame}{A first example}
+\begin{align*}
+  & = \sum_{k=1}^\ell f(t_k)\Delta x_k + \sum_{k=\ell+1}^{m-1} f(t_k)\Delta x_k + f(t_m)\Delta x_m + \sum_{k=m+1}^n f(t_k)\Delta x_k\\
+  & = \sum_{k=1}^\ell 1\Delta x_k + \sum_{k=\ell+1}^{m-1} 1\Delta x_k + f(t_m)\Delta x_m + \sum_{k=m+1}^n 2\Delta x_k\\
+  & = (x_\ell-x_0) + (x_{m-1}-x_{\ell}) + f(t_m)(x_m-x_{m-1}) + 2(x_n-x_{m})\\
+  & = 1-\epsilon/4 + (x_{m-1}-x_{\ell}) + f(t_m)(x_m-x_{m-1}) + 2
+\end{align*}
+Therefore 
+\begin{align*}
+|R(P,f,\{t_k\})-3|
+  & = |-\epsilon/4 + (x_{m-1}-x_{\ell}) + f(t_m)(x_m-x_{m-1})|\\
+  & < \epsilon/4 + \epsilon/4 + 2\epsilon/4 = \epsilon
+\end{align*}
+\end{frame}
+
+\begin{frame}{Riemann-Stieltjes sums}
+Notation: given a real-valued function $\alpha$ on $[a,b]$\\
+$$\Delta \alpha_k(P) = \alpha(x_k)-\alpha(x_{k-1}),\quad k=1,2,\dots,n.$$
+\pause
+\begin{defn}
+\pause
+Let $f$ and $\alpha$ be real-valued functions on $[a,b]$, and let $P = \{x_0,x_1,\dots,x_n\}$ be a partition of $[a,b]$.
+\pause
+A sum of the form
+$$S(P,f,\alpha,\{t_k\}) = \sum_{k=1}^n f(t_k) \Delta\alpha_k(P),$$
+for some set of sample points $\{t_k\}$ of $P$.
+\end{defn}
+\end{frame}
+
+\begin{frame}{Riemann-Stieltjes integral}
+\begin{defn}
+\pause
+Let $f$ and $\alpha$ be real-valued functions on $[a,b]$.
+\pause
+We say $f$ is \textbf{Riemann integrable} with respect to $\alpha$ on $[a,b]$ if there exists $A\in\mathbb{R}$ with the following property:
+\pause 
+for all $\epsilon > 0$, there exists a partition $P_\epsilon$ of $[a,b]$ such that for all refinements $P$ of $P_\epsilon$
+$$|S(P,f,\alpha,\{t_k\}) - A| < \epsilon,$$
+for all sets of sample points $\{t_k\}$ of $P$.
+\end{defn}
+\pause
+Notation: in this case $A$ is denote by $\int_a^b f d\alpha$ or $\int_a^b f(x) d\alpha(x)$
+\end{frame}
+
+\begin{frame}{Challenge!}
+\begin{prob}
+Suppose that $a,b$ are real numbers with $a<b$ and let $\alpha$ be a real-valued function on $[a,b]$.\\
+Prove that a constant function $f(x) = c$ is integrable with respect to $\alpha$ on $[a,b]$ and
+$$\int_a^b fd\alpha = c\alpha(b)-c\alpha(a).$$
+\end{prob}
+\end{frame}
+
+\begin{frame}{Challenge!}
+\begin{prob}
+Suppose that $a,b$ are real numbers with $a<b$ and let $\alpha$ be a constant function on $a<b$.\\
+If $f(x)$ is a function on $[a,b]$, show that $f(x)$ is integrable with respect to $\alpha$ on $[a,b]$.\\
+$$\text{What is $\int_a^b fd\alpha$?}$$
+\end{prob}
+\end{frame}
+
+\begin{frame}{Challenge!}
+\begin{prob}
+Suppose that $a,b,c$ are real numbers with $a<c<b$ and let $\alpha$ be the step function
+$$\alpha(x) = \left\lbrace\begin{array}{cc}
+0, & x < c\\
+1, & x \geq c
+\end{array}\right.$$
+Show that if $f(x)$ is a real function on $[a,b]$ which is continuous at $c$, then $f$ is integrable with respect to $\alpha$ on $[a,b]$.\\
+$$\text{What is $\int_a^b fd\alpha$?}$$
+\end{prob}
+\end{frame}
+
+
+\begin{frame}{Linearity of integration}
+\begin{thm}
+Suppose that $f$ and $g$ are Riemann integrable with respect to $\alpha$ on $[a,b]$.\\
+\pause
+Then for any $c_1,c_2\in\mathbb{R}$, $c_1f + c_2g$ is Riemann integrable with respect to $\alpha$ and
+$$\int_a^b (c_1f + c_2g) d\alpha = c_1\int_a^b f d\alpha + c_2\int_a^b g d\alpha.$$
+\end{thm}
+
+\end{frame}
+\begin{frame}{Linearity of integration}
+\begin{proof}
+\pause
+Let $\epsilon > 0$ and WLOG assume $c_1,c_2\neq 0$.\\
+\pause
+Choose a partition $P_\epsilon'$ such that
+$$|S(P,f,\alpha,\{t_k\}) - \int_a^bf d\alpha| < \epsilon/2|c_1|,$$
+for all refinements $P$ of $P_\epsilon'$ and sets of sample points $\{t_k\}$ of $P$.\\
+\pause
+Also, choose a partition $P_\epsilon''$ such that
+$$|S(P,g,\alpha,\{t_k\}) - \int_a^bg d\alpha| < \epsilon/2|c_2|,$$
+for all refinements $P$ of $P_\epsilon''$ and sets of sample points $\{t_k\}$ of $P$.\\
+\pause
+Let $P_\epsilon = P_\epsilon'\cup P_\epsilon''$. 
+\pause
+Then any refinement $P$ of $P_\epsilon$, is a refinement of $P_\epsilon'$ and $P_\epsilon''$.
+\end{proof}
+\end{frame}
+\begin{frame}{Linearity of integration}
+\begin{proof}
+Therefore if $P$ is a refinement of $P_\epsilon$, and $\{t_k\}$ is a set of sample points of $P$, then by the triangle inequality
+\pause
+\begin{align*}
+|S(P,c_1f+c_2g,\alpha,\{t_k\}) - (c_1\int_a^b fd\alpha+c_2\int_a^bgd\alpha)|\\
+ = |c_1S(P,f,\alpha,\{t_k\}) + c_2S(P,g,\alpha,\{t_k\})- (c_1\int_a^b fd\alpha+c_2\int_a^bgd\alpha)|\\
+ = |c_1S(P,f,\alpha,\{t_k\}) - c_1\int_a^b fd\alpha + c_2S(P,g,\alpha,\{t_k\})- c_2\int_a^bgd\alpha|\\
+ \leq |c_1|\cdot |S(P,f,\alpha,\{t_k\}) - \int_a^b fd\alpha| + |c_2|\cdot |S(P,g,\alpha,\{t_k\})- \int_a^bgd\alpha|\\
+ < \epsilon/2 + \epsilon/2 = \epsilon.
+\end{align*}
+\pause
+Since $\epsilon>0$ was arbitrary, this proves the theorem.
+\end{proof}
+\end{frame}
+
+\begin{frame}{Linearity of integration}
+\begin{thm}
+Suppose that $f$ is Riemann integrable with respect to both $\alpha$ and $\beta$ on $[a,b]$.\\
+\pause
+Then for any $c_1,c_2\in\mathbb{R}$, $f$ is Riemann integrable with respect to $c_1\alpha + c_2\beta$ and
+$$\int_a^b f d(c_1\alpha + c_2\beta) = c_1\int_a^b f d\alpha + c_2\int_a^b f d\beta.$$
+\end{thm}
+\end{frame}
+
+\begin{frame}{Challenge!}
+\begin{prob}
+Prove the last theorem!
+\end{prob}
+\end{frame}
+
+\begin{frame}{Linearity of integration}
+\begin{thm}
+Suppose that $f$ is a real-valued function on $[a,b]$ and that $c\in (a,b)$.
+\pause
+If $\int_a^c fd\alpha$ and $\int_b^c fd\alpha$ exist, then $\int_a^cfd\alpha$ exists and
+$$\int_a^c fd\alpha + \int_c^b fd\alpha = \int_a^b fd\alpha.$$
+\pause
+Conversely, if $\int_a^c fd\alpha$ exists then $\int_a^c fd\alpha$ and $\int_b^c fd\alpha$ exist and
+$$\int_a^c fd\alpha + \int_c^b fd\alpha = \int_a^b fd\alpha.$$
+\end{thm}
+\end{frame}
+
+\begin{frame}{Integration by parts}
+The integrand and integrator play dual roles:
+\begin{thm}{Integration by parts}
+Let $f$ be integrable with respect to $\alpha$ on $[a,b]$.\\
+Then $\alpha$ is integrable with respect to $f$ on $[a,b]$ and
+$$\int_a^b f d\alpha = f(b)\alpha(b)-f(a)\alpha(a)-\int_a^b \alpha df.$$
+\end{thm}
+\end{frame}
+
+\begin{frame}{Relation to Riemann integrals}
+\begin{thm}
+Let $f$ be integrable with respect to $\alpha$ on $[a,b]$.\\
+If $\alpha$ is continuous on $[a,b]$ and continuously differentiable on $(a,b)$, then
+$f(x)\alpha'(x)$ is integrable with respect to $x$ on $[a,b]$ and
+$$\int_a^b f d\alpha = \int_a^bf(x)\alpha'(x)dx.$$
+\end{thm}
+\end{frame}
+
+
+\end{document}
+
+
