@@ -84,13 +84,13 @@ Prove that the function
 
 $$f(x) = \left\lbrace\begin{array}{cc}
 0 & x=1/n,\ \ n\in\mathbb Z_+\\
-1 & x \text{otherwise}
+1 & \text{otherwise}
 \end{array}\right.$$
 
 is Riemann integrable on $$[0,1]$$ and calculate $$\int_0^1 f(x) dx$$.
 
 **Problem 5:**
 
-Calculate the upper and lower Riemann-Stieltjes integrals of $$f(x) = x^2$$ on the interval $$[1,3]$$ and prove that $$f(x)$$ is Riemann integrable on $$[1,3]$$.
+Calculate the upper and lower Riemann-Stieltjes integrals of $$f(x) = x^2$$ with respect to $$\alpha(x) = x$$ on the interval $$[1,3]$$ and prove that $$f(x)$$ is Riemann integrable on $$[1,3]$$.
 
 
