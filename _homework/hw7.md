@@ -83,8 +83,8 @@ $$f(x) = \left\lbrace\begin{array}{cc}
 Prove that the function
 
 $$f(x) = \left\lbrace\begin{array}{cc}
-0 & x=1/n,\ \ n\in\mathbb Z_+\\
-1 & \text{otherwise}
+0, & x=1/n\ \ \text{for some}\ n\in\mathbb Z_+\\
+1, & \text{otherwise}
 \end{array}\right.$$
 
 is Riemann integrable on $$[0,1]$$ and calculate $$\int_0^1 f(x) dx$$.
