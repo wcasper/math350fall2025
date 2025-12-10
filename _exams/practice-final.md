@@ -11,8 +11,8 @@ Note: you may NOT use a theorem or result from class to prove something when it 
 
 ## Problem 1
 
-Prove that if $$x\geq 0$$ is a real number and $$0\leq x\leq \epsilon$$ for all $$\epsilon >0$$, then $$x=0$$.
-Use only the axioms of the real numbers, and  carefully state what axiom you are using at each point of the proof.
+Prove that the positive integers are not bounded above using first principles.
+Do not use the Archimedian Principle.
 
 ## Problem 2
 
